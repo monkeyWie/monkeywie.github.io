@@ -3,9 +3,9 @@ title: 发布jar包到maven中央仓库
 date: 2018-07-23 14:00:24
 categories: 后端
 tags:
+  - java
   - maven
   - deploy
-  - java
 ---
 ## 前言
 我们知道在maven中引入第三方jar包是非常简单的，只需要使用groupId+artifactId+version就能从maven仓库中下载下来对应的jar包。
