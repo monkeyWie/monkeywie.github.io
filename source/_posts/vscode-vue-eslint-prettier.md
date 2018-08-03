@@ -104,3 +104,7 @@ module.exports = {
 ```
 
 这样把`ESLint`和`Prettier`冲突的规则配置一致,格式化之后就不会冲突了。
+
+## 效果预览
+![格式化template](vscode-vue-eslint-prettier/template-format.gif)  
+![格式化js](vscode-vue-eslint-prettier/js-format.gif)  
