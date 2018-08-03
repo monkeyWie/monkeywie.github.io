@@ -7,17 +7,24 @@ tags:
   - jvm
   - 动态代理
 ---
-由于动态代理生成的class是直接以二进制的方式加载进内存中的，并没有对应的.class文件生成，所以如果想通过反编译工具查看动态代理生成的代码需要通过特殊的手段来处理。
+
+由于动态代理生成的 class 是直接以二进制的方式加载进内存中的，并没有对应的.class 文件生成，所以如果想通过反编译工具查看动态代理生成的代码需要通过特殊的手段来处理。
+
 ### 方案一
-设置运行环境变量,运行后会把class文件生成在classpath目录下
+
+设置运行环境变量,运行后会把 class 文件生成在 classpath 目录下
+
 ```
 //动态代理时生成class文件
 System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
 ```
-缺点是只适用于JDK动态代理
+
+缺点是只适用于 JDK 动态代理
 
 ### 方案二
-使用ClassDump,可以dump出JVM中所有已加载的class。ClassDump位于$JAVA_HOME/lib/sa-jdi.jar中(注：windows版本JDK从1.7开始才有此工具),直接以命令行执行。
+
+使用 ClassDump,可以 dump 出 JVM 中所有已加载的 class。ClassDump 位于$JAVA_HOME/lib/sa-jdi.jar 中(注：windows 版本 JDK 从 1.7 开始才有此工具),直接以命令行执行。
+
 ```
 #查看PID
 E:\work\Test\bin>jps
@@ -34,9 +41,10 @@ public class MyFilter implements ClassFilter{
 	public boolean canInclude(InstanceKlass arg0) {
 		return arg0.getName().asString().startsWith("com/sun/proxy/$Proxy0");
 	}
-	
+
 }
 ```
+
 ```
 #查看PID
 E:\work\Test\bin>jps
@@ -44,10 +52,11 @@ E:\work\Test\bin>jps
 #使用ClassFilter输出匹配的class文件，并指定输出目录
 E:\work\Test\bin>java -classpath ".;./bin;%JAVA_HOME%/lib/sa-jdi.jar" -Dsun.jvm.hotspot.tools.jcore.filter=proxy.MyFilter -Dsun.jvm.hotspot.tools.jcore.outputDir=e:/dump sun.jvm.hotspot.tools.jcore.ClassDump <PID>
 ```
-此方案基于JVM层的ClassDump所以可以支持javassist、cglib、asm动态生成的class。
 
+此方案基于 JVM 层的 ClassDump 所以可以支持 javassist、cglib、asm 动态生成的 class。
 
-### 最后贴下JDK动态代理反编译出来的代码
+### 最后贴下 JDK 动态代理反编译出来的代码
+
 ```
 package com.sun.proxy;
 
@@ -66,12 +75,12 @@ public final class $Proxy0
   private static Method m3;
   private static Method m0;
   private static Method m2;
-  
+
   public $Proxy0(InvocationHandler paramInvocationHandler)
   {
     super(paramInvocationHandler);
   }
-  
+
   static
   {
     try
@@ -92,7 +101,7 @@ public final class $Proxy0
       throw new NoClassDefFoundError(localClassNotFoundException.getMessage());
     }
   }
-  
+
   //方法重写
   public final String run()
   {
@@ -110,7 +119,7 @@ public final class $Proxy0
       throw new UndeclaredThrowableException(localThrowable);
     }
   }
-  
+
   public final boolean equals(Object paramObject)
   {
     try
@@ -126,7 +135,7 @@ public final class $Proxy0
       throw new UndeclaredThrowableException(localThrowable);
     }
   }
-  
+
   public final String toString()
   {
     try
@@ -142,7 +151,7 @@ public final class $Proxy0
       throw new UndeclaredThrowableException(localThrowable);
     }
   }
-  
+
   public final int hashCode()
   {
     try
@@ -159,8 +168,8 @@ public final class $Proxy0
     }
   }
 }
-
 ```
 
 ### 参考
+
 [http://rednaxelafx.iteye.com/blog/727938](http://rednaxelafx.iteye.com/blog/727938)
