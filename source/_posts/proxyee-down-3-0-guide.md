@@ -21,21 +21,22 @@ tags: proxyee-down
 10. mac 系统打包成原生 app 应用，而不是像之前一样用批处理文件启动。
 
 ## 软件下载
+
 - [windows](http://api.pdown.org/download/release?os=windows)
 - [mac](http://api.pdown.org/download/release?os=mac)
 - [linux](https://github.com/proxyee-down-org/proxyee-down/releases)
 
 ## 使用说明
 
-- windows:
-  下载好 windows 版本的压缩包之后，解压至任意目录，会得到一个文件夹，执行文件夹里面的`Proxyee Down.exe`文件即可。
+- windows:  
+  下载好 windows 版本的压缩包之后，解压至任意目录，会得到一个文件夹，执行文件夹里面的`Proxyee Down.exe`文件即可。  
   (_注：360 可能会报毒，需要加入白名单_)
   ![](proxyee-down-3-0-guide/2018-09-05-13-49-38.png)
-- mac:
-  下载好 mac 版本的压缩包之后，解压至任意目录，会得到一个`Proxyee Down`App，双击运行即可。
+- mac:  
+  下载好 mac 版本的压缩包之后，解压至任意目录，会得到一个`Proxyee Down`App，双击运行即可。  
   (_注：mac 系统切换代理和安装证书需要管理员权限，所以在启动时会提示输入密码_)
   ![](proxyee-down-3-0-guide/2018-09-05-13-51-38.png)
-- linux:
+- linux:  
   linux 系统目前没有打原生包，要自行下载 jar 包运行，需安装 JRE 或 JDK(_要求版本不低于 1.8_)，下载完成后在命令行中运行：
   ```
   java -jar proxyee-down-main.jar
@@ -61,10 +62,11 @@ tags: proxyee-down
 
 #### 扩展商店
 
-安装完证书后会进入扩展商店页面，目前扩展商店只有一款百度云下载扩展，以后会陆续开发更多的扩展(_例如：各大网站的视频下载扩展、其他网盘的下载扩展等等)。
+安装完证书后会进入扩展商店页面，目前扩展商店只有一款百度云下载扩展，以后会陆续开发更多的扩展(\_例如：各大网站的视频下载扩展、其他网盘的下载扩展等等)。
 ![扩展商城](proxyee-down-3-0-guide/2018-09-05-14-12-21.png)
 
 #### 扩展安装
+
 在操作栏找到安装按钮，点击安装即可安装扩展。
 ![](proxyee-down-3-0-guide/2018-09-05-14-26-44.png)
 
@@ -74,17 +76,22 @@ tags: proxyee-down
 如果不使用全局代理，可以点击`复制PAC链接`，配合[SwitchyOmega 插件](https://www.switchyomega.com/)来使用。
 
 #### 相关
-- SwitchyOmega设置教程
-  1. 新建情景模式，选择PAC情景模式类型。
-  ![](proxyee-down-3-0-guide/2018-09-05-14-25-34.png)
-  2. 把复制的PAC链接粘贴进来并点击立即更新情景模式然后保存。
-  ![](proxyee-down-3-0-guide/2018-09-05-14-30-30.png)
-  3. 切换情景模式进行下载
-  ![](proxyee-down-3-0-guide/2018-09-05-14-32-00.png)
-- 参与扩展开发
- 详见[proxyee-down-extension](https://github.com/proxyee-down-org/proxyee-down-extension)
-- 扩展实现原理
-扩展功能是由 MITM(中间人攻击)技术实现的，使用[proxyee](https://github.com/monkeyWie/proxyee)框架拦截和修改`HTTP`、`HTTPS`的请求和响应报文，从而实现对应的扩展脚本注入。
+
+- SwitchyOmega 设置教程
+
+  1. 新建情景模式，选择 PAC 情景模式类型。
+     ![](proxyee-down-3-0-guide/2018-09-05-14-25-34.png)
+  2. 把复制的 PAC 链接粘贴进来并点击立即更新情景模式然后保存。
+     ![](proxyee-down-3-0-guide/2018-09-05-14-30-30.png)
+  3. 切换情景模式进行下载  
+     ![](proxyee-down-3-0-guide/2018-09-05-14-32-00.png)
+
+- 参与扩展开发  
+  详见[proxyee-down-extension](https://github.com/proxyee-down-org/proxyee-down-extension)
+
+- 扩展实现原理  
+  扩展功能是由 MITM(中间人攻击)技术实现的，使用[proxyee](https://github.com/monkeyWie/proxyee)框架拦截和修改`HTTP`、`HTTPS`的请求和响应报文，从而实现对应的扩展脚本注入。
 
 ## 鸣谢
+
 谢谢一直以来大家对本软件的支持和认可，相信在你们的反馈和支持下本软件会做的越来越好！
