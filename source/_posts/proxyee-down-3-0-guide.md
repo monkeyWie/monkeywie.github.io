@@ -50,6 +50,7 @@ tags: proxyee-down
 #### 相关
 
 - [创建任务进阶教程](https://github.com/proxyee-down-org/proxyee-down/blob/v2.5/.guide/common/create/read.md)
+- [刷新任务下载链接](https://github.com/proxyee-down-org/proxyee-down/blob/v2.5/.guide/common/refresh/read.md)
 
 ### 扩展模块
 
