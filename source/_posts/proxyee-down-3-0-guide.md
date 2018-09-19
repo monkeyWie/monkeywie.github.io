@@ -22,19 +22,16 @@ tags: proxyee-down
 
 ## 软件下载
 
-- [OneDrive下载](https://imhx-my.sharepoint.com/personal/pd_imhx_onmicrosoft_com/Documents/Forms/All.aspx?slrid=58578c9e-90fc-0000-2541-bbdecb83b89a&FolderCTID=0x012000536DC31294EC264084FE880734F95AEA&id=%2Fpersonal%2Fpd_imhx_onmicrosoft_com%2FDocuments%2Fproxyee-down%2F3%2E0)(推荐)
- 感谢 [惶心|技术博客](https://tech.hxco.de) 提供
-- 官网下载：
-  官网带宽比较低，建议用OneDrive下载
-  - [windows](http://api.pdown.org/download/release?os=windows)
-  - [mac](http://api.pdown.org/download/release?os=mac)
-  - [linux](https://github.com/proxyee-down-org/proxyee-down/releases)
+- [OneDrive 下载](https://imhx-my.sharepoint.com/personal/pd_imhx_onmicrosoft_com/Documents/Forms/All.aspx?slrid=58578c9e-90fc-0000-2541-bbdecb83b89a&FolderCTID=0x012000536DC31294EC264084FE880734F95AEA&id=%2Fpersonal%2Fpd_imhx_onmicrosoft_com%2FDocuments%2Fproxyee-down%2F3%2E0)(推荐)
+  感谢 [惶心|技术博客](https://tech.hxco.de) 提供
+- [官网下载](http://pdown.org/releases.html)：
+  官网带宽比较低，建议用 OneDrive 下载
 
 ## 使用说明
 
 - **windows**:  
   下载好 windows 版本的压缩包之后，解压至任意目录，会得到一个文件夹，执行文件夹里面的`Proxyee Down.exe`文件即可。  
-  (_注：1.如果启动闪退，把APP复制到别的目录就可以正常运行。2.mac 系统切换代理和安装证书需要管理员权限，所以在启动时会提示输入密码_)  
+  (_注：1.如果启动闪退，把 APP 复制到别的目录就可以正常运行。2.mac 系统切换代理和安装证书需要管理员权限，所以在启动时会提示输入密码_)  
   ![](proxyee-down-3-0-guide/2018-09-05-13-49-38.png)
 - **mac**:  
   下载好 mac 版本的压缩包之后，解压至任意目录，会得到一个`Proxyee Down`App，双击运行即可。  
@@ -81,13 +78,14 @@ tags: proxyee-down
 
 - **其他相关**
 
-  - **SwitchyOmega 设置教程**  
+  - **SwitchyOmega 设置教程**
+
     1. 新建情景模式，选择 PAC 情景模式类型。
-      ![](proxyee-down-3-0-guide/2018-09-05-14-25-34.png)
+       ![](proxyee-down-3-0-guide/2018-09-05-14-25-34.png)
     2. 把复制的 PAC 链接粘贴进来并点击立即更新情景模式然后保存。
-      ![](proxyee-down-3-0-guide/2018-09-05-14-30-30.png)
+       ![](proxyee-down-3-0-guide/2018-09-05-14-30-30.png)
     3. 切换情景模式进行下载  
-      ![](proxyee-down-3-0-guide/2018-09-05-14-32-00.png)
+       ![](proxyee-down-3-0-guide/2018-09-05-14-32-00.png)
 
   - **参与扩展开发**  
     详见[proxyee-down-extension](https://github.com/proxyee-down-org/proxyee-down-extension)
