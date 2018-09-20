@@ -22,7 +22,7 @@ tags: proxyee-down
 
 ## 软件下载
 
-- [OneDrive 下载](https://imhx-my.sharepoint.com/personal/pd_imhx_onmicrosoft_com/Documents/Forms/All.aspx?slrid=58578c9e-90fc-0000-2541-bbdecb83b89a&FolderCTID=0x012000536DC31294EC264084FE880734F95AEA&id=%2Fpersonal%2Fpd_imhx_onmicrosoft_com%2FDocuments%2Fproxyee-down%2F3%2E0)(推荐)
+- [OneDrive 下载](https://imhx-my.sharepoint.com/:f:/g/personal/pd_imhx_onmicrosoft_com/EnPrybHS3rVFuy_HdcP7RLoBwhb0k5ayJdIzwjU0hCM9-A?e=he0oIz)(推荐)
 - [官网下载](http://pdown.org/releases.html)：
   官网带宽比较低，建议用 OneDrive 下载
 
