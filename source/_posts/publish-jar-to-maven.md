@@ -24,6 +24,8 @@ tags:
 
 那如果想要发布自己的 jar 包到 maven 仓库应该如何操作呢。
 
+<!-- more -->
+
 ## 创建 issue
 
 要发布 jar 包到 maven 仓库首先需要人工审核，在审核过了的话才可以进行后续发布 jar 包的操作。首先需要在[https://issues.sonatype.org/secure/Dashboard.jspa](https://issues.sonatype.org/secure/Dashboard.jspa)上注册一个账号，登录之后点击**Create**,在弹出来的界面中填写响应的信息

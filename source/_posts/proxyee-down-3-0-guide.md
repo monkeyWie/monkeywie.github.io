@@ -20,6 +20,8 @@ tags: proxyee-down
 9. 移除老版本自带的百度云解压工具(之后会单独开发一款解压工具从下载器里独立出来)
 10. mac 系统打包成原生 app 应用，而不是像之前一样用批处理文件启动。
 
+<!-- more -->
+
 ## 软件下载
 
 - [OneDrive 下载](https://imhx-my.sharepoint.com/:f:/g/personal/pd_imhx_onmicrosoft_com/EnPrybHS3rVFuy_HdcP7RLoBwhb0k5ayJdIzwjU0hCM9-A?e=he0oIz)(推荐)

@@ -11,6 +11,8 @@ tags:
 
 最近心血来潮，准备学习下开源届首选的搜索引擎`Elasticsearch`，在了解相关概念之后就准备在虚拟机装上试一试了。
 
+<!-- more -->
+
 ## 下载安装包
 
 在[Elasticsearch 官网](https://www.elastic.co/downloads/elasticsearch)下载，下载完后解压至任意目录。

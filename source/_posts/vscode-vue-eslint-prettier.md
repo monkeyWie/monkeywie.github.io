@@ -12,6 +12,8 @@ tags:
 
 本人是 JAVA 为主，开发工具用的 IDEA，之前写 Vue 前端的时候也是直接用的 IDEA+Vue 插件来开发的，一般也是写着玩，不是正式项目，所以也从来没用过`ESLint`和`Prettier`，然后最近要参与一个前端项目，用 IDEA 导入项目后打开，出于强迫症使用熟悉的<kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>L</kbd>格式了下代码，发现代码格式完全对不上啊，调研了下之后，义无反顾的转投`VS Code`写前端了。
 
+<!-- more -->
+
 ## 安装 vs code 和插件
 
 首先在[VS Code 官网](https://code.visualstudio.com/)下载安装包，安装好之后启动，然后按<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd>打开插件安装界面，搜索以下插件并安装好。
