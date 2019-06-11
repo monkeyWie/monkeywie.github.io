@@ -1,7 +1,7 @@
 ---
 title: java8下HTTP代理身份验证设置
 date: 2019-06-11 17:13:12
-categories: HTTP代理
+categories: 后端
 tags:
   - JAVA
   - HTTP
