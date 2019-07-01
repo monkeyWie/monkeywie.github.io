@@ -16,6 +16,8 @@ tags:
 ![](fiddler-tutorial/2019-05-25-18-17-30.png)
 客户端的请求经过 Fiddler 的代理服务器转发，再由`Fidder`对目标服务器进行请求，得到响应之后再返回给客户端，在整个通讯过程中 Fidder 是一个中间人的角色，可以捕获到所有的请求和响应报文。
 
+<!-- more -->
+
 ## 下载
 
 `Fidder` 是一款免费的应用，可以直接通过[官网](https://www.telerik.com/download/fiddler)下载，目前只支持 windows 操作系统(官网已经有 mac 和 linux 的 beta 版本)，不过本文只针对 windows 操作系统 下的 fiddler 使用。
@@ -44,12 +46,29 @@ tags:
 上图中选中的都是`Raw`选项卡，即展示原始的 HTTP 报文内容，其它选项卡即根据报文做对应的视图展示，这里就不一一介绍了。
 
 ### 解码压缩报文
-现在大多数HTTP服务器都开启了`gzip、deflate`之类的压缩功能，在fiddler中默认捕获的响应是不会解码这些压缩报文的，需要手动解码或者设置fiddler自动解码，如下图：
+
+现在大多数 HTTP 服务器都开启了`gzip、deflate`之类的压缩功能，在 fiddler 中默认捕获的响应是不会解码这些压缩报文的，需要手动解码或者设置 fiddler 自动解码，如下图：
 ![](fiddler-tutorial/2019-05-30-18-30-54.png)
 
 ### 过滤报文
-在fiddler中默认是显示所有捕获到的HTTP请求，但有的时候我们不需要看到这么多不关心的请求，对此fiddler提供了`filter`功能可以自定义过滤出需要关心的请求。
 
-通过右侧面板-filter选项，即可进入`filter`配置页面，可以支持各种各样的过滤规则，这里展示下按域名过滤，可以看到只显示了对应域名下的请求：
+在 fiddler 中默认是显示所有捕获到的 HTTP 请求，但有的时候不需要看到这么多不关心的请求，对此 fiddler 提供了`filter`功能可以自定义过滤出需要关心的请求。
+
+通过右侧面板-filter 选项，即可进入`filter`配置页面，可以支持各种各样的过滤规则，这里展示下按域名过滤，可以看到只显示了对应域名下的请求：
 ![](fiddler-tutorial/2019-05-30-18-46-40.png)
 
+## 高级功能
+
+### HTTPS 支持
+
+默认情况情况下`Fidder`是不支持嗅探`HTTPS`报文的，需要在设置里手动开启，通过`Tools-Options`打开设置面板，切换到`https`标签页进行以下配置：
+![](fiddler-tutorial/2019-06-13-15-59-07.png)
+
+在首次开启`HTTPS`支持时，会提示安装一个 Fidder 生成的`CA根证书`，安装完之后才能支持 HTTPS 的报文嗅探:
+![](fiddler-tutorial/2019-06-13-16-02-01.png)
+
+然后再访问下`https://www.baidu.com`，可以看到已经嗅探到了`HTTPS`的明文：
+![](fiddler-tutorial/2019-06-13-16-03-50.png)
+
+### AutoResponder
+使用`AutoResponder`可以通过配置对应的规则自动替换响应内容，在右侧面板中的`AutoResponder`选项卡中进行配置：
