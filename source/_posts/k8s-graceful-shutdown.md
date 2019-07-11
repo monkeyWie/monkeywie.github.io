@@ -22,6 +22,8 @@ tags:
 
 这里要注意，`SIGTERM信号如果进程没有处理的话也其实也就会导致进程被强杀`，如果处理了但是超过`terminationGracePeriodSeconds`配置的时间也一样会被强杀，所以这个时间可以根据具体的情况去设置。
 
+<!-- more -->
+
 ### SpringBoot 处理 SIGTERM 信号
 
 在`SpringBoot`中处理 SIGTERM 信号非常简单，只需要一个`@PreDestroy`注解就可以监听到：
