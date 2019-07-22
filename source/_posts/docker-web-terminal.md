@@ -29,8 +29,10 @@ tags:
 - 安装 sdk
 
 ```go
-go get github.com/docker/docker/client
+go get -u github.com/docker/docker/client@8c8457b0f2f8
 ```
+
+这个项目新打的 tag 没有遵循 go mod server 语义，所以如果直接`go get -u github.com/docker/docker/client`默认安装的是 2017 年的打的一个 tag 版本，这里我直接在 master 分支上找了一个 commit ID，具体原因参考[issue](https://github.com/moby/moby/issues/39056)
 
 - 调用 exec
 
