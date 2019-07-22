@@ -14,7 +14,7 @@ tags:
 ## 效果展示
 
 ![](docker-web-terminal/2019-07-22-09-24-49.png)
-支持颜色高亮，支持<kbd>tab</kbd>建补全，支持复制粘贴，体验基本上与平常的 terminal 一致。
+支持颜色高亮，支持<kbd>tab</kbd>键补全，支持复制粘贴，体验基本上与平常的 terminal 一致。
 
 <!-- more -->
 
