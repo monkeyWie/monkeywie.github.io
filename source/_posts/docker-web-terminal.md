@@ -16,6 +16,8 @@ tags:
 ![](docker-web-terminal/2019-07-22-09-24-49.png)
 支持颜色高亮，支持<kbd>tab</kbd>建补全，支持复制粘贴，体验基本上与平常的 terminal 一致。
 
+<!-- more -->
+
 ## 基于 docker 的 web terminal 实现
 
 ### docker exec 调用
