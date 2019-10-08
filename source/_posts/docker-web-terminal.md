@@ -203,6 +203,8 @@ func terminal(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	// 获取容器ID或name
 	container := r.Form.Get("container")
+	// 执行exec，获取到容器终端的连接
+	hr, err := exec(container)
 	if err != nil {
 		log.Error(err)
 		return
