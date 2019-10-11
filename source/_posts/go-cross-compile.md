@@ -85,8 +85,8 @@ go build main.go
 - Linux 上编译 Mac 和 Windows 上 64 位可执行程序
 
 ```sh
-CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build test.go
-CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build main.go
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
 ```
 
 ### cgo 程序交叉编译
