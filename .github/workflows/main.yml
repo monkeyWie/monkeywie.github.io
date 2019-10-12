@@ -22,7 +22,7 @@ jobs:
           ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh/
-          echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "liwei2633@163.com"
           git config --global user.name "monkeyWie"
