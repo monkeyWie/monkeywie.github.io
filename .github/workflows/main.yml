@@ -18,8 +18,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         version: ${{ matrix.node_version }}
-    - name: npm install,hexo deploye
+    - name: install
       run: |
+        npm install -g hexo hexo-deployer-git
         npm install
         hexo clean
         hexo d
