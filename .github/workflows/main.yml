@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout source
       uses: actions/checkout@v1
+      with:
+        ref: hexo
     - name: Use Node.js ${{ matrix.node_version }}
       uses: actions/setup-node@v1
       with:
