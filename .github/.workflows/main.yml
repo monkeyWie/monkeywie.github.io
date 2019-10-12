@@ -1,0 +1,23 @@
+name: CI
+
+on: 
+  push:
+    branches:
+    - hexo
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        version: ${{ matrix.node_version }}
+    - name: npm install,hexo deploye
+      run: |
+        npm install
+        hexo clean
+        hexo d
