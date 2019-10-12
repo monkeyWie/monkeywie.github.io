@@ -28,7 +28,8 @@ jobs:
           git config --global user.name "monkeyWie"
           npm install hexo-cli -g
           npm install
-      - name: Hexo deploye
+          cat ~/.ssh/id_rsa
+      - name: Hexo deploy
         run: |
           hexo clean
           hexo d
