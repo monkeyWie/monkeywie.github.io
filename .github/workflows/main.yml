@@ -23,6 +23,6 @@ jobs:
         npm install -g hexo hexo-deployer-git
         npm install
         git config --global user.email "liwei2633@163.com"
-        git config --global user.name "monkeywie"
+        git config --global user.name "monkeyWie"
         hexo clean
         hexo d
