@@ -1,28 +1,34 @@
 name: CI
 
-on: 
+on:
   push:
     branches:
-    - hexo
+      - hexo
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout source
-      uses: actions/checkout@v1
-      with:
-        ref: hexo
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      with:
-        version: ${{ matrix.node_version }}
-    - name: install
-      run: |
-        npm install hexo-cli hexo-deployer-git -g
-        npm install
-        git config --global user.email "liwei2633@163.com"
-        git config --global user.name "monkeyWie"
-        hexo clean
-        hexo d
+      - name: Checkout source
+        uses: actions/checkout@v1
+        with:
+          ref: hexo
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          version: ${{ matrix.node_version }}
+      - name: Setup hexo
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "liwei2633@163.com"
+          git config --global user.name "monkeyWie"
+          npm install hexo-cli -g
+          npm install
+      - name: Hexo deploye
+        run: |
+          hexo clean
+          hexo d
