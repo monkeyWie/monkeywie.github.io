@@ -20,7 +20,7 @@ jobs:
         version: ${{ matrix.node_version }}
     - name: install
       run: |
-        npm install hexo-cli -g
+        npm install hexo-cli hexo-deployer-git -g
         npm install
         git config --global user.email "liwei2633@163.com"
         git config --global user.name "monkeyWie"
