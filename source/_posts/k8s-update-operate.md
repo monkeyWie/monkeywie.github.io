@@ -81,5 +81,7 @@ kubectl create secret tls hello \
 
 主要是`--dry-run`配合`-o yaml`生成对应的 yaml 文件，然后再使用`kubectl apply -f -`进行更新。
 
-- --dry-run 表示不会发生实际的操作，也就是不会对 k8s 产生影响
-- kubectl apply -f - 表示拿到上一个管道的输入就行执行
+- --dry-run
+  表示不会发生实际的操作，也就是不会对 k8s 产生影响
+- kubectl apply -f -
+  表示拿到上一个管道的输入进行执行
