@@ -13,6 +13,8 @@ tags:
 
 ![](hello-github-actions/2019-10-30-11-30-13.png)
 
+<!-- more -->
+
 ## 使用说明
 
 这里简单介绍下 `Github Actions`中的概念，具体可以参考[官方文档](https://help.github.com/en/github/automating-your-workflow-with-github-actions)。
