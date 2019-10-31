@@ -159,7 +159,7 @@ jobs:
 2. 运行一个 job，在`ubuntu`虚拟机环境下
 3. 使用官方提供的[actions/checkout@v1](https://github.com/actions/checkout)来拉取源码
 4. 使用官方提供的[actions/setup-node@v1](https://github.com/actions/setup-node)来安装 node 环境
-5. 使用 `${{ secrets.ACTION_DEPLOY_KEY }}`读取刚刚生成的私钥，并设置成环境变量，`${{}}`写法为 actions 内置的表达式语法，详细文档参考：[contexts-and-expression-syntax-for-github-actions](https://help.github.com/en/github/automating-your-workflow-with-github-actions/contexts-and-expression-syntax-for-github-actions)
+5. 使用 `${{ secrets.ACTION_DEPLOY_KEY }}`读取刚刚生成的私钥，并设置成环境变量，`${{ exp }}`写法为 actions 内置的表达式语法，详细文档参考：[contexts-and-expression-syntax-for-github-actions](https://help.github.com/en/github/automating-your-workflow-with-github-actions/contexts-and-expression-syntax-for-github-actions)
 6. 将私钥写入到`~/.ssh/id_rsa`文件中，并把`github.com`域名加入到`~/.ssh/known_hosts`文件中，以免第一次 ssh 访问时弹出交互式命令。
 7. 配置 git 用户信息
 8. 安装 hexo 命令行工具和项目的依赖
