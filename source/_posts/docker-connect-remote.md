@@ -14,6 +14,8 @@ docker 其实是一个 C/S 程序，执行`docker`命令行其实就是在与`do
 
 在`linux`上 docker 默认是使用`unix socket`进行通讯的，如果要远程访问是不支持的，对此需要开启 `tcp协议`，以支持外部访问。
 
+<!--more-->
+
 ### 开启 tcp 协议
 
 1. 修改`/lib/systemd/system/docker.service`文件
