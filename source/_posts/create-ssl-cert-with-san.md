@@ -12,14 +12,14 @@ tags:
 
 SAN(Subject Alternative Name) 是 SSL 标准 x509 中定义的一个扩展。使用了 SAN 字段的 SSL 证书，可以扩展此证书支持的域名，使得一个证书可以支持多个不同域名的解析。
 
+<!--more-->
+
 来看看百度的证书，百度证书的扩展域名有这么多，其中还有了\*.hao123.com，那我们再看看 www.hao123.com 的证书
 ![](create-ssl-cert-with-san/2019-11-15-16-54-49.png)
 发现的确是用的前面的百度证书
 
 ![](create-ssl-cert-with-san/2019-11-15-16-55-08.png)
 所以 SAN 带来的好处就可以看出来了，一个证书可以用在各种不同的域名下，不需要一个域名买一个证书了。
-
-<!--more-->
 
 ## 利用 OpenSSL 创建证书
 
