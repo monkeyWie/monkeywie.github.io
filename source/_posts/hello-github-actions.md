@@ -78,7 +78,7 @@ hexo clean&&hexo d
 git push
 ```
 
-在使用`Github Actions`之后，只需要把`hexo`分支代码推送到 github 上，剩下的全部交给`Github Actions`即可，在此之前我们需要生成一对`公私钥`个用于 hexo 的部署操作，因为 hexo 自带的部署命令`hexo d`需要有 git 远程仓库读写权限。
+在使用`Github Actions`之后，只需要把`hexo`分支代码推送到 github 上，剩下的全部交给`Github Actions`即可，在此之前我们需要生成一对`公私钥`用于 hexo 的部署操作，因为 hexo 自带的部署命令`hexo d`需要有 git 远程仓库读写权限。
 
 ```sh
 ssh-keygen
