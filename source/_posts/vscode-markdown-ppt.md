@@ -1,12 +1,17 @@
 ---
-title: 用vscode + markdown语法制作简易幻灯片(PPT)
+title: 用vscode + markdown制作简易幻灯片(PPT)
 date: 2019-11-27 12:07:03
+categories: 杂谈
 tags:
+  - vscode
+  - markdown
 ---
 
 ## 前言
 
 在公司里经常做技术分享，如果用 PPT 来做的话非常耗费时间，所以一般都是直接用 markdwon 写，但是 markdwon 有个缺点是不能像 PPT 那样翻页展示，于是就 google 了一番看看能不能把 markdown 做成像 PPT 那样的效果，果然已经有这样的技术了，下面就记录下具体步骤。
+
+<!-- more -->
 
 ## vscode 安装插件
 
