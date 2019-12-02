@@ -82,7 +82,7 @@ presentation:
 效果预览：
 ![](vscode-markdown-ppt/2019-11-27-14-00-25.gif)
 
-默认内容是居中的，通过自定义`css style`可以把内容调整为左对齐：
+默认内容是居中的，通过自定义`css style`可以把内容调整为左对齐和滚动条支持：
 
 ```markdown
 ---
@@ -95,6 +95,10 @@ presentation:
   .reveal .slides {
       margin: auto 20px;
       text-align: initial;
+  }
+  section.slide{
+    height: 100%;
+    overflow-y: auto !important
   }
 </style>
 
