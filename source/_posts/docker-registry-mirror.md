@@ -33,7 +33,7 @@ docker 官方仓库加速镜像配置：
    systemctl restart docker
    ```
 
-## gcr.io 和 k8s.gcr.io
+## gcr.io
 
 google 仓库加速镜像，需要手动将前缀改一下，替换为`gcr.azk8s.cn/google_containers/<image-name>:<version>` ,例如：
 
@@ -43,4 +43,18 @@ google 仓库加速镜像，需要手动将前缀改一下，替换为`gcr.azk8s
 docker pull gcr.azk8s.cn/google_containers/k8s-dns-node-cache:1.15.7
 # 重新打tag
 docker tag gcr.azk8s.cn/google_containers/k8s-dns-node-cache:1.15.7 k8s.gcr.io/k8s-dns-node-cache:1.15.7
+```
+
+```
+#docker pull gcr.io/kubernetes-e2e-test-images/echoserver:2.2
+docker pull gcr.azk8s.cn/kubernetes-e2e-test-images/echoserver:2.2
+docker tag gcr.azk8s.cn/kubernetes-e2e-test-images/echoserver:2.2 gcr.io/kubernetes-e2e-test-images/echoserver:2.2
+```
+
+## quay.io
+
+```
+#docker pull quay.io/deis/go-dev:v1.10.0
+docker pull quay.azk8s.cn/deis/go-dev:v1.10.0
+docker tag quay.azk8s.cn/deis/go-dev:v1.10.0 quay.io/deis/go-dev:v1.10.0
 ```
