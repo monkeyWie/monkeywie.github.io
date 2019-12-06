@@ -58,3 +58,6 @@ docker tag gcr.azk8s.cn/kubernetes-e2e-test-images/echoserver:2.2 gcr.io/kuberne
 docker pull quay.azk8s.cn/deis/go-dev:v1.10.0
 docker tag quay.azk8s.cn/deis/go-dev:v1.10.0 quay.io/deis/go-dev:v1.10.0
 ```
+
+## 参考
+[https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md](https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md)
