@@ -33,9 +33,9 @@ docker 官方仓库加速镜像配置：
    systemctl restart docker
    ```
 
-## k8s.gcr.io
+## gcr.io 和 k8s.gcr.io
 
-google 仓库加速镜像，需要手动将`k8s.gcr.io/<image-name>:<version>`替换为`gcr.azk8s.cn/google_containers/<image-name>:<version>` ,例如：
+google 仓库加速镜像，需要手动将前缀改一下，替换为`gcr.azk8s.cn/google_containers/<image-name>:<version>` ,例如：
 
 ```
 #docker pull k8s.gcr.io/k8s-dns-node-cache:1.15.7
