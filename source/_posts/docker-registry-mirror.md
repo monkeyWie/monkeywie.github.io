@@ -11,6 +11,8 @@ tags:
 
 国内从 docker hub 拉取镜像时速度非常慢，这里记录下国内的一些免费加速镜像服务器。
 
+<!-- more -->
+
 ## docker bub
 
 docker 官方仓库加速镜像配置：
