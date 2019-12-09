@@ -8,7 +8,7 @@ tags:
   - ssl
 ---
 
-## 什么是 SAN[](http://liaoph.com/openssl-san/#什么是-san)
+## 什么是 SAN
 
 SAN(Subject Alternative Name) 是 SSL 标准 x509 中定义的一个扩展。使用了 SAN 字段的 SSL 证书，可以扩展此证书支持的域名，使得一个证书可以支持多个不同域名的解析。
 
@@ -61,13 +61,13 @@ openssl req -new \
 
 ```
 openssl ca -in server.csr \
-        -md sha256 \
-        -keyfile ca.key \
-	-cert ca.crt \
-	-extensions SAN \
-	-config <(cat /etc/pki/tls/openssl.cnf \
+    -md sha256 \
+    -keyfile ca.key \
+    -cert ca.crt \
+    -extensions SAN \
+    -config <(cat /etc/pki/tls/openssl.cnf \
         <(printf "[SAN]\nsubjectAltName=DNS:*.bdstatic.com,DNS:*.baidu.com")) \
-	-out server.crt
+    -out server.crt
 ```
 
 之后把生成好的服务器证书和服务器密钥在服务器(ngnix,tomcat)里配置好，并且把 ca.crt 证书导入到浏览器的受信任的根证书颁发机构里，在浏览器访问就不会有红叉叉了。
