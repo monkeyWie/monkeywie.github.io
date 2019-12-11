@@ -123,7 +123,9 @@ linux 中`glibc`的 resolver 的缺省超时时间是 5s，而导致超时的原
 
 > DNS client (glibc 或 musl libc) 会并发请求 A 和 AAAA 记录，跟 DNS Server 通信自然会先 connect (建立 fd)，后面请求报文使用这个 fd 来发送，由于 UDP 是无状态协议， connect 时并不会发包，也就不会创建 conntrack 表项, 而并发请求的 A 和 AAAA 记录默认使用同一个 fd 发包，send 时各自发的包它们源 Port 相同(因为用的同一个 socket 发送)，当并发发包时，两个包都还没有被插入 conntrack 表项，所以 netfilter 会为它们分别创建 conntrack 表项，而集群内请求 kube-dns 或 coredns 都是访问的 CLUSTER-IP，报文最终会被 DNAT 成一个 endpoint 的 POD IP，当两个包恰好又被 DNAT 成同一个 POD IP 时，它们的五元组就相同了，在最终插入的时候后面那个包就会被丢掉，如果 dns 的 pod 副本只有一个实例的情况就很容易发生(始终被 DNAT 成同一个 POD IP)，现象就是 dns 请求超时，client 默认策略是等待 5s 自动重试，如果重试成功，我们看到的现象就是 dns 请求有 5s 的延时。
 
-### 解决方案（一）：使用 TCP 协议发送 DNS 请求
+## 解决方案
+
+### 方案（一）：使用 TCP 协议发送 DNS 请求
 
 通过`resolv.conf`的`use-vc`选项来开启 TCP 协议
 
@@ -149,7 +151,7 @@ linux 中`glibc`的 resolver 的缺省超时时间是 5s，而导致超时的原
 
 确实没有出现`5s`的超时问题了，但是部分请求耗时还是比较高，在`4s`左右，而且平均耗时比 UPD 协议的还高，效果并不好。
 
-### 解决方案（二）：避免相同五元组 DNS 请求的并发
+### 方案（一）：避免相同五元组 DNS 请求的并发
 
 通过`resolv.conf`的`single-request-reopen`和`single-request`选项来避免：
 
@@ -232,7 +234,7 @@ template:
 
 不支持`alpine`基础镜像的容器，因为`apline`底层使用的`musl libc`库并不支持这些 resolv.conf 选项，所以如果使用`alpine`基础镜像构建的应用，还是无法规避超时的问题。
 
-### 解决方案（三）：本地 DNS 缓存
+### 方案（三）：本地 DNS 缓存
 
 其实 k8s 官方也意识到了这个问题比较常见，给出了 coredns 以 cache 模式作为 daemonset 部署的解决方案: [https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns/nodelocaldns](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns/nodelocaldns)
 
@@ -513,6 +515,6 @@ systemctl restart kubelet
 
 > `注`：配置文件路径也可能是`/etc/kubernetes/kubelet`
 
-### 最终解决方案
+## 最终解决方案
 
 最后还是决定使用`方案(二)+方案(三)`配合使用，来最大程度的优化此问题，并且将线上所有的基础镜像都替换为非`apline`的镜像版本，至此问题基本解决，也希望 K8S 官方能早日将此功能直接集成进去。
