@@ -19,12 +19,12 @@ docker 官方仓库加速镜像配置：
 
 1. 修改`/etc/docker/daemon.json`文件：
 
-   ```
+   ```json
    {
-   "registry-mirrors": [
+     "registry-mirrors": [
        "https://dockerhub.azk8s.cn",
        "https://reg-mirror.qiniu.com"
-   ]
+     ]
    }
    ```
 
@@ -62,4 +62,5 @@ docker tag quay.azk8s.cn/deis/go-dev:v1.10.0 quay.io/deis/go-dev:v1.10.0
 ```
 
 ## 参考
+
 [https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md](https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md)
