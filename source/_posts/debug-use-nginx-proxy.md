@@ -11,6 +11,8 @@ tags:
 
 现在公司项目都是前后端分离的方式开发，有些时候由于某些新需求开发或者 bug 修改，想要让前端直接连到我本地开发环境进行调试，而前端代码我并没有，只能通过前端部署的测试环境进行测试，最简单的办法就是直接改 host 把后端测试环境的域名指向我本地的 IP，这对于 HTTP 协议的服务来说是很轻易做到的，不过公司的测试环境全部上了 HTTPS，而我本地的服务是 HTTP 协议这样就算是改了 host 也会由于协议不同导致请求失败，所以需要将本地的服务升级成 HTTPS 才行。
 
+<!-- more -->
+
 ## 方案
 
 其实 springboot 本身就支持 HTTPS([howto-configure-ssl](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/html/howto.html#howto-configure-ssl))，但是这需要改项目代码不太优雅，于是就想直接用`nginx`反向代理到本地服务，这样在`nginx`层面做 HTTPS 就不需要改代码了，只需修改 host 将`后端测试环境域名`指向 `nginx` 服务的 IP 即可，而且可以适用于其它的 HTTP 服务开发调试。
