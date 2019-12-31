@@ -101,7 +101,7 @@ server {
 docker run -d --name https -p 443:443 -v ~/forword/ssl:/usr/local/nginx/ssl -v ~/forword/config/nginx.conf:/etc/nginx/conf.d/default.conf  nginx
 ```
 
-将 nginx 配置和证书相关文件挂载至对于的目录，并暴露 443 端口，这样服务启动后即可通过 https 访问到本地开发环境了。
+将 nginx 配置和证书相关文件挂载至对应的目录，并暴露 443 端口，这样服务启动后即可通过 https 访问到本地开发环境了。
 
 ### 安装根证书
 
