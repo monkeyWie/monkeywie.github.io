@@ -151,7 +151,7 @@ linux 中`glibc`的 resolver 的缺省超时时间是 5s，而导致超时的原
 
 确实没有出现`5s`的超时问题了，但是部分请求耗时还是比较高，在`4s`左右，而且平均耗时比 UPD 协议的还高，效果并不好。
 
-### 方案（一）：避免相同五元组 DNS 请求的并发
+### 方案（二）：避免相同五元组 DNS 请求的并发
 
 通过`resolv.conf`的`single-request-reopen`和`single-request`选项来避免：
 
