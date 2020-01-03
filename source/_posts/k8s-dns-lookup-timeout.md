@@ -495,15 +495,15 @@ spec:
 template:
   spec:
     dnsConfig:
-	  nameservers:
+      nameservers:
         - 169.254.20.10
       searches:
         - public.svc.cluster.local
-		- svc.cluster.local
-		- cluster.local
+        - svc.cluster.local
+        - cluster.local
       options:
         - name: ndots
-          value: "5"
+        value: "5"
     dnsPolicy: None
 ```
 
