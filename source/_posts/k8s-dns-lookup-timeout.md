@@ -491,29 +491,29 @@ spec:
 
 - 方案（一）：通过修改 pod 的 template.spec.dnsConfig 来设置，并将`dnsPolicy`设置为`None`
 
-  ```yaml
-  template:
-    spec:
-      dnsConfig:
-        nameservers:
-          - 169.254.20.10
-        searches:
-          - public.svc.cluster.local
-          - svc.cluster.local
-          - cluster.local
-        options:
-          - name: ndots
-          value: "5"
-      dnsPolicy: None
-  ```
+```yaml
+template:
+  spec:
+    dnsConfig:
+      nameservers:
+        - 169.254.20.10
+      searches:
+        - public.svc.cluster.local
+        - svc.cluster.local
+        - cluster.local
+      options:
+        - name: ndots
+        value: "5"
+    dnsPolicy: None
+```
 
 - 方案（二）：修改默认的`cluster-dns`，在 node 节点上将`/etc/systemd/system/kubelet.service.d/10-kubeadm.conf`文件中的`--cluster-dns`参数值修改为`169.254.20.10`，然后重启`kubelet`
 
-  ```
-  systemctl restart kubelet
-  ```
+```
+systemctl restart kubelet
+```
 
-  > `注`：配置文件路径也可能是`/etc/kubernetes/kubelet`
+> `注`：配置文件路径也可能是`/etc/kubernetes/kubelet`
 
 ## 最终解决方案
 
