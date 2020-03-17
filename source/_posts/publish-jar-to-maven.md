@@ -82,7 +82,7 @@ tags:
   ```
   上传完后验证是否成功
   ```
-  gpg --keyserver hkp://keyserver.ubuntu.com:11371 --revc-keys FC27E7C61FC5D176DD7F67198C6EFA8E944CD6BA
+  gpg --keyserver hkp://keyserver.ubuntu.com:11371 --receive-keys FC27E7C61FC5D176DD7F67198C6EFA8E944CD6BA
   ```
   验证成功
   ```
