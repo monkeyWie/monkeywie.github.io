@@ -270,7 +270,7 @@ xgo -targets=darwin/amd64,windows/amd64,linux/amd64 -ldflags="-w -s" .
 xgo -targets=darwin/amd64,windows/amd64,linux/amd64 -ldflags="-w -s" -pkg=cmd/main.go .
 ```
 
-然而并没有编译成功，没办法只再仔细 review 一遍源码，最后在[build.sh:154](https://github.com/techknowlogick/xgo/blob/master/docker/base/build.sh#L154)这行代码发现，如果启用了 go mod 的话，pkg 参数就会失效，为什么要这样做我也没太明白，不过既然知道原因了那就 [fork](https://github.com/monkeyWie/xgo) 一份修复吧。
+然而并没有编译成功，然后去看了一下源码，最后在[build.sh:154](https://github.com/techknowlogick/xgo/blob/master/docker/base/build.sh#L154)这行代码发现，如果启用了 go mod 的话，pkg 参数就会失效，为什么要这样做我也没太明白，不过既然知道原因了那就 [fork](https://github.com/monkeyWie/xgo) 一份修复吧。
 
 最终代码为：
 
