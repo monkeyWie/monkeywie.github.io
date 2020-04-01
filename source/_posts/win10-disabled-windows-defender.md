@@ -10,6 +10,8 @@ tags:
 
 最近把 win10 版本升级到了`1909`,然后发现在有个`Windows Defender Antivirus Server`的服务会占用大量的 cpu 和内存，网上找了好多办法都关不掉它，现在终于找了个靠谱的办法在这里记录下。
 
+<!--more-->
+
 ### 步骤
 
 1. 打开注册表，找到`HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows Defender`
