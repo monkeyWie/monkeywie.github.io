@@ -76,7 +76,7 @@ openssl ca -in server.csr \
 server {
     listen 443 ssl;
     server_name _;
-    ssl_certificate "/usr/local/nginx/ssl/server.pem";
+    ssl_certificate "/usr/local/nginx/ssl/server.crt";
     ssl_certificate_key "/usr/local/nginx/ssl/server.key";
     location / {
         proxy_set_header X-Real-IP $remote_addr;
