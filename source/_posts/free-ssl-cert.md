@@ -164,16 +164,26 @@ certbot certonly --cert-name pdown.org -d *.pdown.org,*.proxyee-down.com --manua
 
 ```
 docker run \
--e ACCESS_KEY_ID=*** \
--e ACCESS_KEY_SECRET=*** \
 --name cert \
--itd certbot-aliyun:latest /bin/bash
+-itd \
+-v /etc/letsencrypt:/etc/letsencrypt \
+-e ACCESS_KEY_ID=XXX \
+-e ACCESS_KEY_SECRET=XXX \
+liwei2633/certbot-aliyun
 ```
 
-- 使用 `certbot renew`续签证书
+- 首次创建证书
 
 ```
-docker exec cert certbot renew
+docker exec -it cert ./create.sh *.pdown.org
+```
+
+创建过程中会等待一段时间，来确保 dns 记录生效，完成之后在`/etc/letsencrypt/live`目录下可以找到对应的证书文件
+
+- 续签证书
+
+```
+docker exec cert ./renew.sh
 ```
 
 代码开源在[github](https://github.com/monkeyWie/certbot-dns-aliyun)，欢迎 start。
