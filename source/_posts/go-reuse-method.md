@@ -3,7 +3,7 @@ title: Go语言方法复用
 date: 2020-03-31 16:00:06
 categories: 后端
 tags:
-  - Go
+  - go
 ---
 
 ### 前言

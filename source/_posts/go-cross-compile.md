@@ -3,7 +3,7 @@ title: Go语言之交叉编译
 date: 2019-10-10 15:22:27
 categories: 后端
 tags:
-  - Go
+  - go
 ---
 
 ## 前言

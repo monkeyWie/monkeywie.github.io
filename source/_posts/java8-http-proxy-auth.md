@@ -3,8 +3,8 @@ title: java8下HTTP代理身份验证设置
 date: 2019-06-11 17:13:12
 categories: 后端
 tags:
-  - JAVA
-  - HTTP
+  - java
+  - http
   - proxy
 ---
 

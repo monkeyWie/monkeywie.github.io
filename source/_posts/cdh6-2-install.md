@@ -1,7 +1,9 @@
 ---
 title: CDH6.2离线安装
 date: 2020-04-14 17:02:37
+categories: 大数据
 tags:
+  - cdh
 ---
 
 ## 前言

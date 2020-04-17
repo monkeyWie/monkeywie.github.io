@@ -3,7 +3,7 @@ title: java反射使用getDeclaredMethods会获取到父类方法的解决办法
 date: 2019-07-03 10:18:25
 categories: 后端
 tags:
-  - JAVA
+  - java
   - 反射
 ---
 

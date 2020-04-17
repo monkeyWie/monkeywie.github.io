@@ -3,7 +3,7 @@ title: 聊聊HTTP协议的keep-alive
 date: 2020-01-13 12:01:13
 categories: 后端
 tags:
-  - HTTP
+  - http
 ---
 
 ## 介绍

@@ -3,7 +3,7 @@ title: Go语言flag接收slice和map类型参数
 date: 2019-09-03 15:22:27
 categories: 后端
 tags:
-  - Go
+  - go
 ---
 
 ## 前言

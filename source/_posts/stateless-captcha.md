@@ -3,7 +3,7 @@ title: 设计一种无状态的验证码
 date: 2020-03-26 11:06:02
 categories: 后端
 tags:
-  - HTTP
+  - http
   - 无状态
   - 验证码
 ---

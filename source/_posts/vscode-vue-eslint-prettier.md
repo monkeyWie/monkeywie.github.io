@@ -5,7 +5,7 @@ categories: 前端
 tags:
   - js
   - vue
-  - vs code
+  - vscode
 ---
 
 ## 前言
