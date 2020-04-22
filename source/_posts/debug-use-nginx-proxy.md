@@ -58,7 +58,7 @@ openssl ca -in server.csr \
     -out server.crt
 ```
 
-这样就得到了三个关键文件：
+如果上面步骤发送错误，可以[参考](https://monkeywie.github.io/2019/11/15/create-ssl-cert-with-san/#%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF)常见错误解决办法，成功之后就得到了三个关键文件：
 
 - `root.crt`:根证书
 - `server.key`:服务证书私钥
