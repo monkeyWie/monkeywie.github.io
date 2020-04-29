@@ -26,6 +26,8 @@ git 在本地有三个工作区域：
 git checkout -- 文件名
 # 还原所有文件
 git checkout .
+# 删除所有工作区没有add的文件
+git clean -fd
 ```
 
 ### 暂存区 -> 工作区
