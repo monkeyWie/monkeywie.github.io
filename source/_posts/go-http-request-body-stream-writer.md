@@ -21,7 +21,7 @@ buf := bytes.NewBuffer([]byte("hello"))
 http.Post("localhost:8099/report","text/pain",buf)
 ```
 
-需要先把要写入的数据放在`Buffer`中，放内存缓存着，但是我需要写入`大量`的数据，如果都放内存里肯定要 OOM 了，不过 http client 并没有提供`流式写入`的方法，我这么大的数据量直接用`Buffer`肯定是不行的，最后在 google 了一番之后找到了解决办法。
+需要先把要写入的数据放在`Buffer`中，放内存缓存着，但是我需要写入`大量`的数据，如果都放内存里肯定要 OOM 了，http client 并没有提供`流式写入`的方法，我这么大的数据量直接用`Buffer`肯定是不行的，最后在 google 了一番之后找到了解决办法。
 
 <!--more-->
 
