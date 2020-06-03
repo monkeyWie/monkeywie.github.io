@@ -32,13 +32,13 @@ http.Post("localhost:8099/report","text/pain",buf)
 - 代码示例：
 
 ```go
-pr, rw := io.Pipe()
+pr, pw := io.Pipe()
 // 开协程写入大量数据
 go func(){
     for i := 0; i < 100000; i++ {
-        rw.Write([]byte(fmt.Sprintf("line:%d\r\n", i)))
+        pw.Write([]byte(fmt.Sprintf("line:%d\r\n", i)))
     }
-    rw.Close()
+    pw.Close()
 }()
 // 传递Reader
 http.Post("localhost:8099/report","text/pain",pr)
