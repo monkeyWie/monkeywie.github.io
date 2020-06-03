@@ -41,7 +41,7 @@ go func(){
     rw.Close()
 }()
 // 传递Reader
-http.Post("localhost:8099/report","text/pain",buf)
+http.Post("localhost:8099/report","text/pain",pr)
 ```
 
 ### 源码阅读
