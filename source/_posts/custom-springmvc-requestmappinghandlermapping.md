@@ -20,6 +20,8 @@ map.put("POST /user",UserController#create)
 
 这样通过解析请求就可以很快的找到对应的方法去执行，当然 SpringMVC 的实现肯定不会像上面一样这么简单，不过思路是差不多的。
 
+<!--more-->
+
 ### 加载流程
 
 - 流程图
