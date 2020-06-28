@@ -86,7 +86,7 @@ openssl ca -in server.csr \
 4. 服务器证书请求文件的国家，省，市要和 CA 证书一致,这个在 openssl.cnf 默认配置中指定了，可以修改。
    ![](create-ssl-cert-with-san/2019-11-15-16-56-34.png)
 
-5. 关于私钥的加密格式，因为笔者是在 netty 里使用的 ssl 协议，而 netty 仅支持 PKCS8 格式的私钥(见http://netty.io/wiki/sslcontextbuilder-and-private-key.html)，需要对密钥格式进行转换
+5. 关于私钥的加密格式，因为笔者是在 netty 里使用的 ssl 协议，而 netty 仅支持 PKCS8 格式的私钥见[http://netty.io/wiki/sslcontextbuilder-and-private-key.html](http://netty.io/wiki/sslcontextbuilder-and-private-key.html)，需要对密钥格式进行转换
 
 ```
 openssl pkcs8 -topk8 -nocrypt -in server.key -out server.pem
