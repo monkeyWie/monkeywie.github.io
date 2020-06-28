@@ -1,7 +1,7 @@
 ---
 title: k8s正确的更新姿势
 date: 2019-09-16 18:00:46
-categories: 运维
+categories: DevOps
 tags:
   - k8s
   - DevOps

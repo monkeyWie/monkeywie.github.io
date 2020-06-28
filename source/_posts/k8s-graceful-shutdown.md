@@ -1,7 +1,7 @@
 ---
 title: Kubernetes之优雅停止pod
 date: 2019-07-11 10:22:46
-categories: 运维
+categories: DevOps
 tags:
   - k8s
   - DevOps

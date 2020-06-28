@@ -1,7 +1,7 @@
 ---
 title: k8s域名解析超时问题记录
 date: 2019-12-10 11:42:26
-categories: 运维
+categories: DevOps
 tags:
   - k8s
   - go
