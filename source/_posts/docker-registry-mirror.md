@@ -22,7 +22,6 @@ docker 官方仓库加速镜像配置：
    ```json
    {
      "registry-mirrors": [
-       "https://dockerhub.azk8s.cn",
        "https://reg-mirror.qiniu.com"
      ]
    }
@@ -35,7 +34,7 @@ docker 官方仓库加速镜像配置：
    systemctl restart docker
    ```
 
-## gcr.io
+## ~~gcr.io(以下方法已失效)~~
 
 google 仓库加速镜像，需要手动将前缀改一下，替换为`gcr.azk8s.cn/google_containers/<image-name>:<version>` ,例如：
 
