@@ -52,7 +52,7 @@ docker pull gcr.azk8s.cn/kubernetes-e2e-test-images/echoserver:2.2
 docker tag gcr.azk8s.cn/kubernetes-e2e-test-images/echoserver:2.2 gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 ```
 
-## quay.io
+## ~~quay.io(以下方法已失效)~~
 
 ```
 #docker pull quay.io/deis/go-dev:v1.10.0
