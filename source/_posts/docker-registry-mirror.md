@@ -21,7 +21,11 @@ docker 官方仓库加速镜像配置：
 
    ```json
    {
-     "registry-mirrors": ["https://reg-mirror.qiniu.com"]
+     "registry-mirrors": [
+       "https://docker.mirrors.ustc.edu.cn"，
+       "https://registry.docker-cn.com",
+       "http://hub-mirror.c.163.com"
+     ]
    }
    ```
 
@@ -32,7 +36,7 @@ docker 官方仓库加速镜像配置：
    systemctl restart docker
    ```
 
-> 注：七牛的 docker 仓库现在速度已经非常慢了，建议使用阿里云的 docker [镜像服务](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)，但是需要注册账号开启容器服务之后才有
+> 注：也可以使用阿里云的 docker [镜像服务](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)，但是需要注册账号开启容器服务之后才有
 
 ## ~~gcr.io(以下方法已失效)~~
 
