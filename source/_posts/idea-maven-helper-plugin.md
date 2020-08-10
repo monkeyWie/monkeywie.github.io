@@ -4,7 +4,7 @@ date: 2020-07-13 16:56:38
 categories: IDE
 tags:
   - maven
-  - idea
+  - IDEA
 ---
 
 ### Maven-Helper 插件介绍
