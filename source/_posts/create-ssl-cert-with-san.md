@@ -100,18 +100,25 @@ SslContext serverSslCtx = SslContextBuilder.forServer(new File("E:/server.crt"),
 
 ## 常见错误
 
-1. 遇到`unable to open '/etc/pki/CA/index.txt'`解决办法：
+1.  遇到`unable to open '/etc/pki/CA/index.txt'`解决办法：
 
-   ```shell
-   touch /etc/pki/CA/index.txt
-   ```
+    ```shell
+    touch /etc/pki/CA/index.txt
+    ```
 
-2. 遇到`error while loading serial number`解决办法：
+2.  遇到`error while loading serial number`解决办法：
 
-   ```shell
-   touch /etc/pki/CA/serial
-   echo 00 > /etc/pki/CA/serial
-   ```
+    ```shell
+    touch /etc/pki/CA/serial
+    echo 00 > /etc/pki/CA/serial
+    ```
+
+3.  遇到`failed to update database TXT_DB error number 2`解决办法：
+
+    ```shell
+    rm -rf /etc/pki/CA/index.txt
+    touch /etc/pki/CA/index.txt
+    ```
 
 ## 参考
 
