@@ -99,3 +99,6 @@ search:
 sitemap:
     path: sitemap.xml
     rel: false
+
+html_minifier:
+  exclude: 
