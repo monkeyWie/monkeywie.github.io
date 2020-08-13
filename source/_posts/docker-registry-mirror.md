@@ -22,7 +22,7 @@ docker 官方仓库加速镜像配置：
    ```json
    {
      "registry-mirrors": [
-       "https://docker.mirrors.ustc.edu.cn"，
+       "https://docker.mirrors.ustc.edu.cn",
        "https://registry.docker-cn.com",
        "http://hub-mirror.c.163.com"
      ]
