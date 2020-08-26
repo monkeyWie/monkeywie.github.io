@@ -135,7 +135,7 @@ word
       if err != nil {
         panic(err)
       }
-      // 空读
+      // 空读，注：golang里一定要把数据读完，否则不会复用TCP连接
       io.Copy(ioutil.Discard, resp.Body)
       resp.Body.Close()
     }
