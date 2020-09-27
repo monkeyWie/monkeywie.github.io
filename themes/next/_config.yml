@@ -26,7 +26,7 @@ custom_file_path:
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
   #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
+  postBodyEnd: source/_data/post-body-end.swig
   #footer: source/_data/footer.swig
   #bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
@@ -279,7 +279,7 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || twitter
   #Telegram: https://t.me/channel_name || telegram
-  #WeChat: /images/wechat_channel.jpg || wechat
+  #WeChat: /images/wechat_channel.png || wechat
   #RSS: /atom.xml || rss
 
 # Related popular posts
