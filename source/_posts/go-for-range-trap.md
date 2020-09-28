@@ -130,5 +130,5 @@ func main() {
 }
 ```
 
-## 官方提示
+### 官方提示
 由于这一问题过于普遍，Golang甚至将其写入了文档的『常见错误』部分：[文档](https://github.com/golang/go/wiki/CommonMistakes#using-reference-to-loop-iterator-variable)
