@@ -31,6 +31,8 @@ System.setProperty("http.proxyPort", "port");
 // 发起https请求时使用的代理服务器配置
 System.setProperty("https.proxyHost", "ip");
 System.setProperty("https.proxyPort", "port");
+// 不使用代理的域名，默认为"localhost|127.*|[::1]"
+System.setProperty("http.nonProxyHosts", "*.foo.com|localhost");
 // 这行代码是身份验证的关键配置，不然身份验证不起作用
 System.setProperty("jdk.http.auth.tunneling.disabledSchemes", "");
 // 身份验证
