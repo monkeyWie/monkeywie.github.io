@@ -1,5 +1,5 @@
 ---
-title: Kubernetes之优雅停止pod
+title: Kubernetes之服务优雅升级
 date: 2019-07-11 10:22:46
 categories: DevOps
 tags:
@@ -7,9 +7,13 @@ tags:
   - DevOps
 ---
 
-每个`pod`代表一个集群中节点，在 k8s 做`rolling-update`的时候默认会向旧的`pod`发生一个`SIGTERM`信号，如果应用没有对`SIGTERM`信号做处理的话，会立即强制退出程序，这样的话会导致有些请求还没处理完，前端应用请求错误。
+## 前言
 
-### 滚动升级步骤
+`k8s`本身就支持服务滚动升级，但是如果程序没有正确的处理退出信号时，就会导致部分请求直接被中断从而影响用户体验。
+
+## 滚动升级步骤
+
+每个`pod`代表一个集群中的节点，在 k8s 做`rolling-update`的时候默认会向旧的`pod`发生一个`SIGTERM`信号，如果应用没有对`SIGTERM`信号做处理的话，会立即强制退出程序，这样的话会导致有些请求还没处理完，前端应用请求错误。
 
 先来回顾下 k8s 的滚动升级步骤：
 
@@ -24,7 +28,7 @@ tags:
 
 <!-- more -->
 
-### SpringBoot 处理 SIGTERM 信号
+## SpringBoot 处理 SIGTERM 信号
 
 在`SpringBoot`中处理 SIGTERM 信号非常简单，只需要一个`@PreDestroy`注解就可以监听到：
 
@@ -43,7 +47,7 @@ public class Application {
 }
 ```
 
-### 通过容器生命周期 hook 来优雅停止
+## 通过容器生命周期 hook 来优雅停止
 
 在 pod 中容器将停止前，会执行`PreStop hook`，hook 可以执行一个`HTTP GET`请求或者`exec`命令，并且它们执行是阻塞的，可以利用这个特性来做优雅停止。
 
@@ -74,7 +78,7 @@ public class Application {
 
 这样的好处是可以在 k8s 层面来解决优雅停机的问题，而不需要应用程序对`SIGTERM`信号做处理。
 
-### 关于 PreStop 和 terminationGracePeriodSeconds
+## 关于 PreStop 和 terminationGracePeriodSeconds
 
 1. 如果有`PreStop hook`会执行`PreStop hook`。
 2. `PreStop hook`执行完成后会向 pod 发送`SIGTERM`信号。
