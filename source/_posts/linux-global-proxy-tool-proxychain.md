@@ -41,7 +41,7 @@ sudo make install-config
 
 ## 配置
 
-安装完之后可以找到`/etc/proxychains.conf`文件进行修改，一般请求下翻到最后一段修改代理服务器配置即可。
+安装完之后可以找到`/etc/proxychains.conf`或`/etc/proxychains4.conf`文件进行修改，一般请求下翻到最后一段修改代理服务器配置即可。
 
 ```conf
 [ProxyList]
