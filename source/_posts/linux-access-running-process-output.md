@@ -6,8 +6,6 @@ tags:
   - shell
 ---
 
-![](linux-access-running-process-output/2020-09-29-09-09-26.png)
-
 ## 前言
 
 在 linux 中我们经常会使用`&`符号让进程在后台运行，例如：
