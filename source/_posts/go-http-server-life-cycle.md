@@ -82,7 +82,7 @@ srv.ListenAndServe()
 
 ## 监听服务关闭
 
-在上一步中将服务手动关闭了，那么`srv.ListenAndServe()`方法就会停止阻塞，这里需要注意的是当我们手动关闭服务时，该方法同样会返回一个`error`，当然这个`error`是一个特殊的错误`http.ErrServerClosed`，帮助我们区分是否为正常的服务关闭，所以我们需要对此特殊处理下，代码示例：
+当我们手动将服务关闭之后，`srv.ListenAndServe()`方法就会立即返回，这里需要注意的是该方法会返回一个`error`，当然这个`error`是一个特殊的 error `http.ErrServerClosed`，帮助我们区分是否为正常的服务关闭，所以需要对它特殊处理下，代码示例：
 
 ```go
 if err := server.ListenAndServe(); err != nil {
@@ -96,5 +96,6 @@ if err := server.ListenAndServe(); err != nil {
 ```
 
 ## 参考资料
+
 - [how-to-stop-http-listenandserve](https://stackoverflow.com/questions/39320025/how-to-stop-http-listenandserve)
 - [go-how-can-i-start-the-browser-after-the-server-started-listening](https://stackoverflow.com/questions/32738188/go-how-can-i-start-the-browser-after-the-server-started-listening)
