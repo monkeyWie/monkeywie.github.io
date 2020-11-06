@@ -81,7 +81,7 @@ public class UserServiceTest{
 
   @Test
   public void register(){
-    UserService.register(new User());
+    userService.register(new User());
   }
 }
 ```
