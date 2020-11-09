@@ -1,5 +1,5 @@
 ---
-title: 通过GitHub Action自动部署Maven项目至中央仓库
+title: 通过GitHub Action自动部署Maven项目
 date: 2020-11-06 15:37:47
 categories: 后端
 tags:
