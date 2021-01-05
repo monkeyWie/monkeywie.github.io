@@ -43,7 +43,7 @@ docker run -d --name=mongo \
 
 这里关键的点就是通过`MONGO_INITDB_ROOT_USERNAME`和`MONGO_INITDB_ROOT_PASSWORD`环境变量来设置数据库访问的账号密码，在下面部署 yapi 时要用到。
 
-### 3.部署 yapi
+#### 3.部署 yapi
 
 通过上一步部署的 mongoDB 账号密码进行部署，如下：
 
