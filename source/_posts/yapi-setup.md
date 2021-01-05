@@ -62,12 +62,12 @@ docker run -d --name yapi \
 部署成功的话通过浏览器访问`http://127.0.0.1:3000`应该就可以看到以下界面：
 ![](yapi-setup/2021-01-05-14-58-28.png)
 
-然后使用默认管理员账号密码：`admin@admin.com`+`ymfe.org`登录就能使用了。
+然后使用默认管理员账号密码：admin@admin.com+ymfe.org登录就能使用了。
 
 ![](yapi-setup/2021-01-05-15-00-37.png)
 ![](yapi-setup/2021-01-05-15-00-54.png)
 
-> 这里的镜像是我自己构建上传的镜像，详细可以参考：[basic/README.md](https://github.com/monkeyWie/yapi-docker/blob/master/build/basic/README.md)。
+> 这里的镜像是我自己构建上传的，详细可以参考：[basic/README.md](https://github.com/monkeyWie/yapi-docker/blob/master/build/basic/README.md)。
 > 然后还提供了一个支持`gitlab登录`的镜像，如果有需要的可以参考：[gitlab/README.md](https://github.com/monkeyWie/yapi-docker/blob/master/build/gitlab/README.md)
 
 ### 基于命令行部署
