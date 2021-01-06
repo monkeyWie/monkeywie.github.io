@@ -1,5 +1,5 @@
 ---
-title: git常用功能总结
+title: git常用命令集
 date: 2019-05-07 09:32:44
 categories: 版本控制
 tags:
@@ -22,11 +22,11 @@ git 在本地有三个工作区域：
 ### 还原工作区已修改的文件
 
 ```sh
-# 还原指定文件
+#还原指定文件
 git checkout -- 文件名
-# 还原所有文件
+#还原所有文件
 git checkout .
-# 删除所有工作区没有add的文件
+#删除所有工作区没有add的文件
 git clean -fd
 ```
 
@@ -37,6 +37,8 @@ git clean -fd
 git rm -f 文件名
 #保留在工作区
 git rm --cache 文件名
+#撤销所有已经add的文件
+git reset
 ```
 
 ### 版本库 -> 暂存区
