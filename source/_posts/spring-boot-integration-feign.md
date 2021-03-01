@@ -13,6 +13,8 @@ tags:
 feign 是一个非常好用的 http 客户端工具，它是一种声明式的 http 客户端，只需要声明好接口即可调用，不需要关注底层的请求细节。
 通常情况下都是在 Spring Cloud 项目中使用，这里我把它单独整合到 Spring Boot 中，用来替代`RestTemplate`，提高项目可维护性。
 
+<!--more-->
+
 ## 整合 feign
 
 ### 添加依赖
