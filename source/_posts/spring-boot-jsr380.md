@@ -26,7 +26,7 @@ public Result add(@RequestBody User user){
 }
 ```
 
-而使用`JSR-303`只需要通过添加对应的注解即可实现校验，示例：
+而使用`JSR-380`只需要通过添加对应的注解即可实现校验，示例：
 
 ```java
 @Data
