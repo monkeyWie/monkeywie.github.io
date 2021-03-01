@@ -1,7 +1,10 @@
 ---
 title: Spring Boot使用JSR-380进行校验
 date: 2021-01-27 10:15:18
+categories: 后端
 tags:
+  - java
+  - spring
 ---
 
 ## 介绍
