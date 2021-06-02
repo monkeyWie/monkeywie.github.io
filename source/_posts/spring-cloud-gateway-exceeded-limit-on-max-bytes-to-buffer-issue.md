@@ -1,5 +1,5 @@
 ---
-title: spring-cloud-gateway缓存区大小不够用的解决办法
+title: spring-cloud-gateway缓存区不够用的解决办法
 date: 2021-06-02 14:18:22
 categories: 后端
 tags:
