@@ -1,5 +1,5 @@
 ---
-title: vitrual-box-installation-on-ubuntu
+title: VitrualBox安装增强功能失败的解决办法
 date: 2021-07-21 12:43:58
 categories: 虚拟机
 tags:
