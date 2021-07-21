@@ -6,7 +6,7 @@ tags:
   - ubuntu
 ---
 
-使用`VitrualBox`安装 ubuntu 之后，需要启用`VitrualBox`增强功能，发现一直装不上，这里记录下解决方案：
+使用`VitrualBox`安装 ubuntu20 之后，需要启用`VitrualBox`增强功能，发现一直装不上，这里记录下解决方案：
 
 <!--more-->
 
