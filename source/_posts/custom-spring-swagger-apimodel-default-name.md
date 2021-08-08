@@ -10,6 +10,8 @@ tags:
 
 在 Spring 中集成 swagger 文档功能，需要通过`@ApiModel`注解修饰出入参的类，但是如果有两个不同包下的相同名称的类都使用了`@ApiModel`注解时，会导致文档被覆盖，例如：
 
+<!-- more -->
+
 - com.example.demo.login.dto.UserDTO
 
 ```java
