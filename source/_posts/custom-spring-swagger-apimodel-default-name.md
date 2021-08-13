@@ -1,7 +1,10 @@
 ---
 title: 自定义SpringBoot+Swagger中@ApiModel默认名称
 date: 2021-07-30 16:28:19
+categories: 后端
 tags:
+  - java
+  - spring
 ---
 
 ## 前言
