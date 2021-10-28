@@ -24,6 +24,8 @@ tags:
 
 ## 安装前准备
 
+> 注：不知道什么时候开始CDH官网已经把离线下载资源入口都关掉了，不过好在我之前下载的文件都还在，现在分享到`google driver`里了，链接：https://drive.google.com/drive/folders/1KZLRvYeSeygmPkoJWsNhQvLK4MgPiR5D?usp=sharing
+
 ### 服务器
 
 准备好 N 台服务器，我这里用了 3 台机器，分别如下：
