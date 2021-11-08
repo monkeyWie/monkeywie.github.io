@@ -24,7 +24,7 @@ tags:
 
 默认情况下`WSL2系统`会安装在 C 盘，但是我有块开发专用的 SSD 硬盘，所以需要安装到指定的目录里。
 
-这需要手动下载安装包进行安装，找到微软提供的 wsl 支持的操作系统安装包列表，然后下载对应的安装包即可(https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)。
+这需要手动下载安装包进行安装，找到微软提供的 wsl 支持的操作系统安装包列表，然后下载对应的安装包即可([https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions](https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions))。
 
 我下载的是`Ubuntu 20.04`，下载完之后把后缀名改成`.zip`然后解压到对应的目录，双击
 `ubuntu2004.exe`就安装好了，然后目录下会生成一个`ext4.vhdx`文件，这个就是虚拟机挂载的磁盘文件了。
