@@ -1,5 +1,5 @@
 ---
-title: 手撸一个k8s ingress打通k8s+dubbo网络
+title: 手撸一个ingress controller来打通dubbo+k8s网络
 date: 2021-11-16 10:31:41
 categories: 后端
 tags:
@@ -323,6 +323,7 @@ spec:
 关于完整的使用教程可以通过[github](https://github.com/monkeyWie/dubbo-ingress-controller#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)查看。
 
 > 参考链接：
+>
 > - [dubbo 协议](https://dubbo.apache.org/zh/docs/concepts/rpc-protocol/#protocol-spec)
 > - [dubbo-go](https://github.com/apache/dubbo-go)
 > - [使用多个-ingress-控制器](https://kubernetes.io/zh/docs/concepts/services-networking/ingress-controllers/#%E4%BD%BF%E7%94%A8%E5%A4%9A%E4%B8%AA-ingress-%E6%8E%A7%E5%88%B6%E5%99%A8)
