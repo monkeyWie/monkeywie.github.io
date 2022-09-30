@@ -26,7 +26,7 @@ jobs:
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "liwei2633@163.com"
+          git config --global user.email "liwei-8466@qq.com"
           git config --global user.name "monkeyWie"
           npm install hexo-cli -g
           npm install
