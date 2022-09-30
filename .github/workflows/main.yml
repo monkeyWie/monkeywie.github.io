@@ -13,10 +13,11 @@ jobs:
         uses: actions/checkout@v1
         with:
           ref: hexo
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/actions/setup-node@v3
         with:
-          version: ${{ matrix.node_version }}
+          node-version: 12
+          cache: 'npm'
       - name: Setup hexo
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
