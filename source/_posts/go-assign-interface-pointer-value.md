@@ -40,7 +40,10 @@ func change(a interface{},b interface{}) {
 }
 ```
 
+<!--more-->
+
 ## 解决方案
+
 查阅了一些资料，发现可以通过`reflect`包来解决这个问题，最终代码为：
 
 ```go
@@ -73,4 +76,3 @@ func change[T any](a *T,b T) {
     *a = b
 }
 ```
-
