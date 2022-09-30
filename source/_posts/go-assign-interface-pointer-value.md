@@ -56,8 +56,8 @@ func main() {
 
 func change(a interface{}) {
     // 通过反射来获取指针的值
-	val := reflect.ValueOf(a)
-	val.Elem().Set(reflect.ValueOf(2))
+    val := reflect.ValueOf(a)
+    val.Elem().Set(reflect.ValueOf(2))
 }
 ```
 
