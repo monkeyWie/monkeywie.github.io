@@ -50,14 +50,14 @@ func change(a interface{},b interface{}) {
 func main() {
     var a int = 1
     fmt.Println(a) // 1
-    change(&a)
+    change(&a,2)
     fmt.Println(a) // 2
 }
 
-func change(a interface{}) {
+func change(a interface{},b interface{}) {
     // 通过反射来获取指针的值
     val := reflect.ValueOf(a)
-    val.Elem().Set(reflect.ValueOf(2))
+    val.Elem().Set(reflect.ValueOf(b))
 }
 ```
 
@@ -67,12 +67,12 @@ func change(a interface{}) {
 func main() {
     var a int = 1
     fmt.Println(a) // 1
+    // 通过指定范型来获取指针的值
     change[int](&a,2)
     fmt.Println(a) // 2
 }
 
 func change[T any](a *T,b T) {
-    // 通过范型来获取指针的值
     *a = b
 }
 ```
