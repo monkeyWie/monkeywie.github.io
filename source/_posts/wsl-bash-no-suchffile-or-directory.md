@@ -8,7 +8,7 @@ tags:
 
 ## 前言
 
-想在在 wsl 上安装 flutter 跑一跑我的`gopeed`项目，在安装完 flutter 并设置好环境变量后，运行`flutter doctor`提示`bash\r: No such file or directory`，搜索了一番发现没有找到解决方案，于是自己摸索了一番，记录下来。
+想在 wsl 上安装 flutter 跑一跑我的`gopeed`项目，在安装完 flutter 并设置好环境变量后，运行`flutter doctor`提示`bash\r: No such file or directory`，搜索了一番发现没有找到解决方案，于是自己摸索了一番，记录下来。
 
 <!--more-->
 
