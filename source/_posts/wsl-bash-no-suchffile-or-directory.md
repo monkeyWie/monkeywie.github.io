@@ -1,5 +1,5 @@
 ---
-title: wsl终端运行命令提示‘bash\r’: No such file or directory
+title: wsl终端运行命令提示 'bash\r' No such file or directory
 date: 2023-05-22 15:05:39
 categories: linux
 tags:
