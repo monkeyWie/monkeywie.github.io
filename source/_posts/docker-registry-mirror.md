@@ -22,9 +22,9 @@ docker 官方仓库加速镜像配置：
    ```json
    {
      "registry-mirrors": [
-       "https://docker.mirrors.ustc.edu.cn",
-       "https://registry.docker-cn.com",
-       "https://hub-mirror.c.163.com"
+       "https://dockerproxy.com",
+       "https://docker.m.daocloud.io",
+       "https://docker.nju.edu.cn"
      ]
    }
    ```
