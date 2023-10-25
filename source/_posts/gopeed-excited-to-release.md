@@ -42,6 +42,10 @@ tags: gopeed
 
 基于`git`去中心化和远程仓库的特性，用户只需要输入一个链接地址，即可安装扩展，并且是扩展也是全平台支持的，这样的扩展系统是不是很酷？
 
+这里有人可能会问了，去中心化的扩展系统要怎么找到扩展呢？这里巧妙利用 `Github Topic`功能，只要给你的扩展项目仓库打上`gopeed-extension`的主题标签，然后通过[topics/gopeed-extension](https://github.com/topics/gopeed-extension)就可以找到所有的扩展了：
+
+![](gopeed-excited-to-release/2023-10-25-09-24-50.png)
+
 ## 开放生态
 
 Gopeed 目前开放了两种方式来进行定制化开发：
