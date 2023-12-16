@@ -397,15 +397,15 @@ declare global {
 
 #### [Polyfill 插件](https://github.com/GopeedLab/gopeed-polyfill-webpack-plugin)
 
-此仓库`fork`自[node-polyfill-webpack-plugin](https://github.com/Richienb/node-polyfill-webpack-plugin)，用于垫片`node`环境的 API，比如`http`、`path`等等，在`webpack`生态中这已经是一套非常成熟的垫片方案了，但是由于`gopeed`的扩展环境并不是真正的`浏览器环境`，所以在使用这些垫片方案时碰到了一些问题，比如说有个`vm`模块，它是`node`环境下用来环境隔离的，基于浏览器环境的垫片实现是通过`iframe`来实现的，但是`gopeed`扩展环境是没有`iframe`的，导致此垫片方案都不适用，我就`fork`了一份来为`gopeed`定制了一套`vm`垫片方案，当然我还修改了部分垫片实现，使其更适合`gopeed`的扩展环境。
+此仓库`fork`自[node-polyfill-webpack-plugin](https://github.com/Richienb/node-polyfill-webpack-plugin)，用于垫片`node`环境的 API，比如`http`、`path`等等，在`webpack`生态中这已经是一套非常成熟的垫片方案了，但是由于`Gopeed`的扩展环境并不是真正的`浏览器环境`，所以在使用这些垫片方案时碰到了一些问题，比如说有个`vm`模块，它是`node`环境下用来环境隔离的，基于浏览器环境的垫片实现是通过`iframe`来实现的，但是`Gopeed`扩展环境是没有`iframe`的，导致此垫片方案都不适用，我就`fork`了一份来为`Gopeed`定制了一套`vm`垫片方案，当然我还修改了部分垫片实现，使其更适合`Gopeed`的扩展环境。
 
-总的来说就是我要让`gopeed`扩展环境尽可能对齐`浏览器`环境，然后其它的都通过垫片来实现，如果有需要特殊处理的垫片，就做定制化开发处理，有了这套垫片方案，就可以愉快的使用大部分`npm`包了，目前我开发的几个扩展都是基于`npm`包来实现的，效果还是不错的。
+总的来说就是我要让`Gopeed`扩展环境尽可能对齐`浏览器`环境，然后其它的都通过垫片来实现，如果有需要特殊处理的垫片，就做定制化开发处理，有了这套垫片方案，就可以愉快的使用大部分`npm`包了，目前我开发的几个扩展都是基于`npm`包来实现的，效果还是不错的。
 
 后续如果有更多的垫片需求，我会继续完善这个库。
 
 ## 结语
 
-我花费了大量的时间和精力来实现这套扩展系统，希望`Gopeed`能有一个完善的扩展生态，就像油猴那样，目前我开发的几个扩展只是抛砖引玉，比较我一个人的力量还是有限的，希望能有更多感兴趣的同学参与进来开发扩展，让`Gopeed`的功能更加强大，最后的最后，希望大家能给[Gopeed](https://github.com/GopeedLab/gopeed)点个`star`支持一下，十分感谢！
+我花费了大量的时间和精力来实现这套扩展系统，希望`Gopeed`能有一个完善的扩展生态，就像油猴那样，目前我开发的几个扩展只是抛砖引玉，比较我一个人的力量还是有限的，希望能有更多感兴趣的同学参与进来开发扩展，让`Gopeed`的功能更加强大，最后的最后，希望大家能给 [Gopeed](https://github.com/GopeedLab/gopeed) 点个`star`支持一下，十分感谢！
 
 ### 相关链接
 
