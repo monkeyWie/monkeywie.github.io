@@ -228,7 +228,7 @@ https://github.com/GopeedLab/gopeed-extension-samples#github-release-sample
 
 当然我不可能完全模拟一个`浏览器`环境，目前只实现了一些常用的`API`，例如：`XMLHttpRequest`、`fetch`、`setTimeout`、`setInterval`、`crypto`、`Buffer`、`console`等等，这样就得到了一个阉割版的`浏览器`环境的`javascript`解释器。
 
-这里有个很有意思的地方，其中`XMLHttpRequest`是用`goang`实现的，然后`fetch`是通过`whatwg-fetch`这个 npm 包做的`polyfill`，不得不感叹`js`还是好玩，各种奇技淫巧，而且偷偷告诉你，`react-native`也是用`whatwg-fetch`来实现的`fetch`，别问我怎么知道的，因为我就是借鉴（抄）的它。
+这里有个很有意思的地方，其中`XMLHttpRequest`是用`golang`实现的，然后`fetch`是通过`whatwg-fetch`这个 npm 包做的`polyfill`，不得不感叹`js`还是好玩，各种奇技淫巧，而且偷偷告诉你，`react-native`也是用`whatwg-fetch`来实现的`fetch`，别问我怎么知道的，因为我就是借鉴（抄）的它。
 
 > 关于这部分具体实现，大家如果有兴趣可以看下[源码](https://github.com/GopeedLab/gopeed/tree/main/pkg/download/engine)。
 
