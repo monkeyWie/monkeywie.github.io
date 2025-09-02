@@ -1,5 +1,5 @@
 ---
-title: 独立开发者的 Logo 制作记录
+title: 独立开发者的 Logo 设计
 date: 2025-09-02 13:52:44
 categories: 独立开发
 tags:
