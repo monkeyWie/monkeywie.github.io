@@ -176,9 +176,9 @@ const config: SiteConfig = {
   // If you don't want to use Giscus, set this to undefined.
   giscus: {
     repo: 'monkeyWie/monkeywie.github.io',
-    repoId: 'R_kgDOPNnBig',
-    category: 'Giscus',
-    categoryId: 'DIC_kwDOPNnBis4CteOc',
+    repoId: 'MDEwOlJlcG9zaXRvcnkxNDIxMDk4MTQ=',
+    category: 'Announcements',
+    categoryId: 'DIC_kwDOCHhsds4CxvMI',
     reactionsEnabled: true, // Enable reactions on post itself
   },
   // These are characters available for the character chat feature.

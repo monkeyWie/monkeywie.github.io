@@ -3,7 +3,7 @@ title: 修复Next主题LeanCloud计数的问题
 published: 2023-12-27 10:35:39
 categories: 杂谈
 tags:
-  - hexo
+  - blog
 ---
 
 不知道从什么时候开始，新写的文章阅读数量一直是`1`，一直没有去管，今天把问题解决了，记录下希望能帮到有同样问题的人。

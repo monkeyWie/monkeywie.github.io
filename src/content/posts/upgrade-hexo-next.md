@@ -3,7 +3,7 @@ title: 给博客的next主题升个级
 published: 2020-08-07 10:08:15
 categories: 杂谈
 tags:
-  - hexo
+  - blog
 ---
 
 ## 为什么升级
@@ -62,7 +62,6 @@ tags:
    > 注：一定要使用 npm 官方源进行安装，使用淘宝源下载不到，详见：[https://github.com/cnpm/npm.taobao.org/issues/63](https://github.com/cnpm/npm.taobao.org/issues/63)
 
 3. 在 GitHub 上安装`utterances`
-
    1. 访问：[https://github.com/apps/utterances](https://github.com/apps/utterances)进行安装
       ![](upgrade-hexo-next/2020-08-07-16-29-09.png)
    2. 授权时只选择存放评论的仓库
