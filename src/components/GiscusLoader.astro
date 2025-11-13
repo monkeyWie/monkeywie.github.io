@@ -24,7 +24,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
 >
 </div>
 <script>
-  function loadGiscus() {
+  function loadGiscus(onload) {
     const giscusDiv = document.querySelector('.giscus')
     if (!giscusDiv) {
       throw new Error('Giscus div not found in the document.')
@@ -63,6 +63,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     script.setAttribute('data-loading', 'lazy')
     script.crossOrigin = 'anonymous'
     script.async = true
+    script.onload = onload
     document.body.appendChild(script)
   }
   async function updateTheme(theme: string) {
@@ -104,7 +105,12 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     })
   }
   // Load Giscus script with correct theme and listen for theme changes
-  loadGiscus()
+  loadGiscus(function () {
+    const newTheme = document.documentElement.getAttribute('data-theme')
+    if (newTheme) {
+      updateTheme(newTheme)
+    }
+  })
   listenForThemeChange()
 </script>
 
