@@ -21,7 +21,6 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
   data-category={category}
   data-category-id={categoryId}
   data-reactions-enabled={reactionsEnabled}
-  data-input-position="bottom"
 >
 </div>
 <script>
@@ -59,10 +58,10 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     script.setAttribute('data-reactions-enabled', reactionsEnabled)
     script.setAttribute('data-emit-metadata', '0')
     // Setting this to 'bottom' doesn't work. Not sure why.
-    script.setAttribute('data-input-position', 'bottom')
+    // script.setAttribute('data-input-position', 'bottom')
     script.setAttribute('data-theme', `${origin}/giscus/${theme}.css`)
     script.setAttribute('data-lang', 'zh-CN')
-    // script.setAttribute('loading', 'lazy')
+    script.setAttribute('loading', 'lazy')
     script.crossOrigin = 'anonymous'
     script.async = true
     document.body.appendChild(script)
