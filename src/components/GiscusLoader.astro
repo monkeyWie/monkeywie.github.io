@@ -62,7 +62,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     script.setAttribute('data-input-position', 'bottom')
     script.setAttribute('data-theme', `${origin}/giscus/${theme}.css`)
     script.setAttribute('data-lang', 'zh-CN')
-    script.setAttribute('loading', 'lazy')
+    // script.setAttribute('loading', 'lazy')
     script.crossOrigin = 'anonymous'
     script.async = true
     document.body.appendChild(script)
