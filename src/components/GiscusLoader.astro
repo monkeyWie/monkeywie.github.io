@@ -24,6 +24,12 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
 >
 </div>
 <script>
+  function getCurrentTheme() {
+    return document.documentElement.getAttribute('data-theme').includes('dark')
+      ? 'dark'
+      : 'light'
+  }
+
   function loadGiscus(onload) {
     const giscusDiv = document.querySelector('.giscus')
     if (!giscusDiv) {
@@ -35,9 +41,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     const category = giscusDiv.getAttribute('data-category')
     const categoryId = giscusDiv.getAttribute('data-category-id')
     const reactionsEnabled = giscusDiv.getAttribute('data-reactions-enabled')
-    const theme = document.documentElement.getAttribute('data-theme').includes('dark')
-      ? 'dark'
-      : 'light'
+    const theme = getCurrentTheme()
     if (
       !origin ||
       !repo ||
@@ -84,7 +88,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
       return
     }
     giscusFrame.contentWindow?.postMessage(
-      { giscus: { setConfig: { theme: `${origin}/giscus/${theme}.css` } } },
+      { giscus: { setConfig: { theme: theme } } },
       'https://giscus.app',
     )
   }
@@ -93,10 +97,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     const observer = new MutationObserver((mutations) => {
       mutations.forEach(async (mutation) => {
         if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-          const newTheme = document.documentElement.getAttribute('data-theme')
-          if (newTheme) {
-            await updateTheme(newTheme)
-          }
+          await updateTheme(getCurrentTheme())
         }
       })
     })
