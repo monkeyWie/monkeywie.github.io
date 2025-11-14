@@ -35,7 +35,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     const category = giscusDiv.getAttribute('data-category')
     const categoryId = giscusDiv.getAttribute('data-category-id')
     const reactionsEnabled = giscusDiv.getAttribute('data-reactions-enabled')
-    const theme = document.documentElement.getAttribute('data-theme').contains('dark')
+    const theme = document.documentElement.getAttribute('data-theme').includes('dark')
       ? 'dark_dimmed'
       : 'light_dimmed'
     if (
