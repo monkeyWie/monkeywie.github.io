@@ -35,7 +35,9 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     const category = giscusDiv.getAttribute('data-category')
     const categoryId = giscusDiv.getAttribute('data-category-id')
     const reactionsEnabled = giscusDiv.getAttribute('data-reactions-enabled')
-    const theme = document.documentElement.getAttribute('data-theme')
+    const theme = document.documentElement.getAttribute('data-theme').contains('dark')
+      ? 'dark_dimmed'
+      : 'light_dimmed'
     if (
       !origin ||
       !repo ||
@@ -58,12 +60,11 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     script.setAttribute('data-reactions-enabled', reactionsEnabled)
     script.setAttribute('data-emit-metadata', '0')
     script.setAttribute('data-input-position', 'bottom')
-    script.setAttribute('data-theme', `preferred_color_scheme`)
+    script.setAttribute('data-theme', theme)
     script.setAttribute('data-lang', 'zh-CN')
     script.setAttribute('data-loading', 'lazy')
     script.crossOrigin = 'anonymous'
     script.async = true
-    script.onload = onload
     document.body.appendChild(script)
   }
   async function updateTheme(theme: string) {
@@ -105,12 +106,7 @@ const reactionsEnabled = giscusConfig.reactionsEnabled ? '1' : '0'
     })
   }
   // Load Giscus script with correct theme and listen for theme changes
-  loadGiscus(function () {
-    const newTheme = document.documentElement.getAttribute('data-theme')
-    if (newTheme) {
-      updateTheme(newTheme)
-    }
-  })
+  loadGiscus()
   listenForThemeChange()
 </script>
 
