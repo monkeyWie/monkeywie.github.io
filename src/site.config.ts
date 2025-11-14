@@ -69,7 +69,7 @@ const config: SiteConfig = {
     // https://expressive-code.com/guides/themes/#using-bundled-themes
     // These will be used to theme the entire site along with syntax highlighting.
     // To use light-dark-auto mode, only include a light and a dark theme in that order.
-    include: ['github-light', 'github-dark'],
+    include: ['github-light-default', 'github-dark-default'],
     // include: [
     //   'andromeeda',
     //   'aurora-x',

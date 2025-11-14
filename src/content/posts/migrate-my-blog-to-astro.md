@@ -23,7 +23,7 @@ tags:
 
 ### GitHub Contributions 数据本地抓取
 
-当我把模板下载下来准备使用时，发现 GitHub Contributions 面板无法正常显示，原因是其依赖的第三方 API 服务已经不可用，然后我就顺藤摸瓜去 GitHub 上搜索相关的开源项目。很快就找到了 [github-contributions-api](https://github.com/grubersjoe/github-contributions-api) 这个开源仓库，然后把它的核心代码直接搬到了我[博客项目](https://github.com/monkeyWie/monkeywie.github.io/blob/master/src/libs/github-contributions-api.ts)里，然后对应的把`GitHubActivityCalendar.astro`组件也更新了，这样就不用依赖任何第三方 API，在本地构建时就能抓取数据了。
+当我把模板下载下来准备使用时，发现 GitHub Contributions 面板无法正常显示，原因是其依赖的第三方 API 服务已经不可用，然后我就顺藤摸瓜去 GitHub 上搜索相关的开源项目。很快就找到了 [github-contributions-api](https://github.com/grubersjoe/github-contributions-api) 这个开源仓库，然后把它的核心代码直接搬到了我[博客项目](https://github.com/monkeyWie/monkeywie.github.io/blob/master/src/libs/github-contributions-api.ts)里，对应的把`GitHubActivityCalendar.astro`组件也更新了，这样就不用依赖任何第三方 API，在本地构建时就能抓取数据了。
 
 ### 博客汉化
 
@@ -92,6 +92,22 @@ export default {
 - 进入对应的 Issue
 - 点击右侧的 "Convert to discussion"
 - 选择对应的 Category
+
+#### Giscus 评论框位置问题解决
+
+我发现 Giscus 评论框加载位置在评论区的上方，感觉怪怪的，然后我找到相关的组件代码`GiscusLoader.astro`把位置改成了`bottom`，但是还是一样的，看了下官方文档使用姿势是没有问题的，后来仔细一看这个模板的作者也发现了这个问题，直接注释标出来了，如图：
+
+![](migrate-my-blog-to-astro/2025-11-14-11-07-49.png)
+
+最后经过我的反复测试发现是由于Giscus自定义主题的问题，如果使用外部的css文件就会出现这个问题，但是呢不用自定义主题又和博客的主题风格不搭配，不过还好Giscus官方提供了内置的`github dart`和`github light`主题和我现在博客配置的一致，所幸就直接用了它的内置主题，于是调整了一下代码：
+
+```js
+const theme = document.documentElement.getAttribute('data-theme').includes('dark')
+  ? 'dark'
+  : 'light'
+```
+
+这样做的话就是以后如果博客主题想换了，又得重新调整Giscus的主题了，不过目前在Giscus自定义主题功能修复之前，只能这样了。
 
 ### 效果展示
 
