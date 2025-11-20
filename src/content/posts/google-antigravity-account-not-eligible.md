@@ -1,3 +1,11 @@
+---
+title: Google Antigravity 登录提示地区不可用的解决办法
+published: 2025-11-20 07:48:55
+categories: AI
+tags:
+  - VibeCoding
+---
+
 就在昨天，Google 发布了他们家的AI IDE `Antigravity`，目前可以免费使用，支持`Gemini3`和`Claude4.5`，但是在测试使用的过程中一直因为地区问题无法登录，折腾半天总算解决了，来分享下我的经验
 
 # 📍第一步：先确认你的Google账户地区
