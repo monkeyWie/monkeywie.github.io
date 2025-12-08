@@ -18,13 +18,17 @@ java 是工作，typescript + golang + flutter 是生活，github 斩获 4w+⭐�
 - Twitter: [@JayPlayDota](https://twitter.com/JayPlayDota)
 - 邮箱: liwei2633@gmail.com
 
+## 微信公众号
+
+<img src="/images/wechat.webp" alt="微信公众号" width="200" />
+
 ## 打赏
 
 如果觉得我的项目有帮助，欢迎打赏支持我继续开发更多有趣的项目！
 
 |                                  微信                                  |                              支付宝                              |
 | :--------------------------------------------------------------------: | :--------------------------------------------------------------: |
-| <img src="/images/donate/wechatpay.jpg" alt="wechatpay" width="300" /> | <img src="/images/donate/alipay.jpg" alt="alipay" width="300" /> |
+| <img src="/images/donate/wechatpay.jpg" alt="wechatpay" width="200" /> | <img src="/images/donate/alipay.jpg" alt="alipay" width="200" /> |
 
 ### 数字货币
 

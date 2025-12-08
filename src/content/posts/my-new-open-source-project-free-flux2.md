@@ -39,6 +39,7 @@ tags:
 - **无服务器依赖** - 客户端模式无需外部服务器，保障数据主权
 
 **直接体验**：https://typix.art
+
 **开源地址**：https://github.com/monkeyWie/typix
 
 ## 示例展示
@@ -124,7 +125,7 @@ https://deploy.workers.cloudflare.com/?url=https://github.com/monkeyWie/typix
 
 ![](my-new-open-source-project-free-flux2/2025-12-08-16-57-43.png)
 
-2. 啥用不用改，拉到最下面，直接部署
+2. 授权完之后直接拉到最下面，点击部署
 
 ![](my-new-open-source-project-free-flux2/2025-12-08-17-29-56.png)
 
@@ -148,7 +149,7 @@ https://deploy.workers.cloudflare.com/?url=https://github.com/monkeyWie/typix
 docker run --name typix -d -p 9999:9999 liwei2633/typix
 ```
 
-Docker 部署到方式由于不是运行在 Cloudflare Workers 环境上，所以无法直接使用 Workers AI 服务，需要自己配置 API Key，具体配置方法如下：
+由于 Docker 部署方式不是运行在 Cloudflare Workers 环境里，所以无法直接使用 Workers AI 服务，需要自己配置 API Key，具体配置方法如下：
 
 #### 获取 Workers AI 配置
 

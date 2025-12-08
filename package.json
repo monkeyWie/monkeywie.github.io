@@ -61,6 +61,7 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.16.0",
+    "clipboardy": "^5.0.1",
     "pagefind": "^1.4.0",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
