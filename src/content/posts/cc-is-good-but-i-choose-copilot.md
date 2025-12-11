@@ -3,7 +3,7 @@ title: Claude Code 被吹上天，但我还是选 GitHub Copilot
 published: 2025-12-09 19:56:50
 categories: AI
 tags:
-	- VibeCoding
+  - VibeCoding
 ---
 
 说起 VibeCoding，谈论最多的应该非 Claude Code 莫属。之前我也跟风用过一段时间，但现在还是换回了 Copilot。
