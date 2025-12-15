@@ -3,7 +3,7 @@ title: 不敢信！Augment Code 直接送我一年订阅服务
 published: 2025-12-12 19:36:16
 categories: AI
 tags:
-	- VibeCoding
+  - VibeCoding
 ---
 
 事情是这样的：最近我收到一封来自 Augment Code 官方的邮件，说他们在做一个面向开源项目的推广活动——给参与者免费赞助一年订阅服务。
