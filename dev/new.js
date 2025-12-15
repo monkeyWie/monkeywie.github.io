@@ -31,7 +31,7 @@ title: ${slug}
 published: ${formatDate(now)}
 categories: 
 tags:
-	- 
+  - 
 ---
 
 `
