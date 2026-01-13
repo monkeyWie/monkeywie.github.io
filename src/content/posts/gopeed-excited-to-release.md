@@ -1,7 +1,7 @@
 ---
 title: Gopeed 令人兴奋的新版本发布
 published: 2023-10-24 17:27:30
-categories: 杂谈
+categories: 独立开发
 tags:
  - gopeed
 ---
