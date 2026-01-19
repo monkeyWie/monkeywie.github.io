@@ -1,7 +1,7 @@
 ---
-title: 我是如何给我的开源下载器实现扩展系统的
+title: 为我的开源下载器打造一套扩展系统
 published: 2023-12-14 10:04:44
-categories: 后端
+categories: 独立开发
 tags:
   - gopeed
   - js
@@ -241,17 +241,17 @@ https://github.com/GopeedLab/gopeed-extension-samples#github-release-sample
 ```js
 gopeed.events.onResolve((ctx) => {
   ctx.res = {
-    name: "example",
+    name: 'example',
     files: [
       {
-        name: "index.html",
+        name: 'index.html',
         req: {
-          url: "https://example.com",
+          url: 'https://example.com',
         },
       },
     ],
-  };
-});
+  }
+})
 ```
 
 脚本引擎执行`gopeed.events.onResolve()`来注册一个回调函数，然后在`Golang`中获取到回调函数，并在执行的时候把上下文`ctx`作为参数传递进去，示例代码如下：
@@ -387,7 +387,7 @@ Happy coding!
 
 ```ts
 declare global {
-  const gopeed: Gopeed;
+  const gopeed: Gopeed
 }
 ```
 
