@@ -8,7 +8,7 @@ tags:
 
 ## 前言
 
-如果看过我之前写的[为我的开源下载器打造一套扩展系统](/posts/how-to-develop-a-cross-platform-extension-system)，应该对 Gopeed 的扩展体系有点印象：为了让扩展在 `Windows/macOS/Linux/Android/iOS/Web` 上都能跑，我选择了纯 Go 实现的 JavaScript 引擎 [goja](https://github.com/dop251/goja) 作为运行时，并在上层 `inject`/`polyfill` 了一部分常用浏览器 API，尽量让扩展开发体验贴近“写前端”。
+如果看过我之前写的[给我的开源下载器打造一套扩展系统](/posts/how-to-develop-a-cross-platform-extension-system)，应该对 Gopeed 的扩展体系有点印象：为了让扩展在 `Windows/macOS/Linux/Android/iOS/Web` 上都能跑，我选择了纯 Go 实现的 JavaScript 引擎 [goja](https://github.com/dop251/goja) 作为运行时，并在上层 `inject`/`polyfill` 了一部分常用浏览器 API，尽量让扩展开发体验贴近“写前端”。
 
 最近 [油管扩展](https://github.com/monkeyWie/gopeed-extension-youtube) 有用户反馈：解析失败，没法正常下载。第一反应当然是“油管又更新反爬了”，于是把上游库 [YouTube.js](https://github.com/LuanRT/YouTube.js) 升级到最新版——结果：依然不行。
 
