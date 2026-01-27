@@ -31,7 +31,7 @@ let content = fs.readFileSync(mdPath, 'utf-8')
 console.log(`正在处理文章: ${postSlug}`)
 
 // 构建博客文章 URL
-const blogUrl = `https://monkeywie.cn/posts/${postSlug}`
+const blogUrl = `https://monkeywie.cn/posts/${postSlug.replaceAll('.', '')}`
 
 console.log(`访问博客地址: ${blogUrl}`)
 
