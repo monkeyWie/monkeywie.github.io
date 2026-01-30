@@ -190,6 +190,9 @@ const config: SiteConfig = {
     unicorn: '/unicorn.webp',
     duck: '/duck.webp',
   },
+  // Google Analytics tracking ID (e.g., 'G-XXXXXXXXXX')
+  // If you don't want to use Google Analytics, set this to undefined or remove it.
+  googleAnalyticsId: 'G-YT214SE5DN',
 }
 
 export default config

@@ -179,4 +179,5 @@ export interface SiteConfig {
   navLinks: NavLink[]
   giscus: GiscusConfig | undefined,
   characters: Record<string, string>
+  googleAnalyticsId?: string
 }
