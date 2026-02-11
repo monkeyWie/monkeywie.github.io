@@ -1,5 +1,5 @@
 ---
-title: Gopeed 1.9.1 发布，细节打磨，体验升级
+title: Gopeed 1.9.1 发布，两大实用新特性上线
 published: 2026-02-10 13:38:26
 categories: 独立开发
 tags:
