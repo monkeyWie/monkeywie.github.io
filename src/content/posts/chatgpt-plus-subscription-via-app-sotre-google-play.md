@@ -10,7 +10,7 @@ tags:
 
 最近 `Codex` 开放了免费使用，体验下来确实很不错。不过免费版额度比较低，用不了多久就会触发限制，这时候就得想办法升级。问题是，在国内订阅 `ChatGPT Plus` 并不算容易，支付和网络环境都不太友好。所以这篇文章主要分享一下我个人的订阅经验：**无需海外信用卡或虚拟卡，走国内可操作的正规渠道，实测有效**，供大家参考。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-16-46-59.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-16-46-59.png)
 
 ## 开通教程
 
@@ -48,11 +48,11 @@ tags:
 
 购买渠道直接走支付宝里的 `PockytShop` 小程序，发货快，稳定性也还不错：
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-04-40.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-04-40.png)
 
 进去注册登录之后，选择 `App Store & iTunes`，输入 **`20 美元`** 面额，最后付款就行：
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-09-35.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-09-35.png)
 
 付款成功后，等一会儿就会拿到一个礼品卡兑换码。
 
@@ -66,7 +66,7 @@ tags:
 
 拿到兑换码之后，打开 `App Store`，点击头像进入账户设置，选择 `兑换礼品卡或代码`，输入兑换码进行兑换：
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-13-46.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-13-46.png)
 
 兑换完成后，账户里就会有 **`20 美元`** 余额，可以直接用来订阅 `ChatGPT Plus`。
 
@@ -101,7 +101,7 @@ tags:
 
 打开 `Google Play` 商店，点击头像，选择 `设置 -> 常规 -> 账户和设备偏好设置`，在这里就可以看到 `国家和个人资料`。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-36-35.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-36-35.png)
 
 > 注：实测 `Google Play` 的国家和 🪜 IP 没有强关联，不一定非要是同一个国家。
 
@@ -111,17 +111,17 @@ tags:
 
 打开 [Google Payments 设置页](https://payments.google.com/gp/w/home/settings)，拉到最下面，点击 `关闭支付资料`。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-41-23.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-41-23.png)
 
 然后重新创建一个新的支付资料，国家选择 `日本`，再填写相关信息。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-42-37.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-42-37.png)
 
 > 当然也不一定非要日本区，可能还有别的区更便宜。有兴趣的话可以自己多试几个国家。我试了一圈之后，感觉日本区已经算比较划算了，所以就没继续折腾。
 
 后面的资料可以通过 [日本地址生成器](https://www.meiguodizhi.com/jp-address) 来生成，能通过验证就行。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-45-28.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-45-28.png)
 
 添加完成后，退出 `Google Play` 再重新打开确认一下，会发现已经切到日本区了。
 
@@ -129,7 +129,7 @@ tags:
 
 点击头像，选择 `付款和订阅 -> 付款方式 -> 添加信用卡或借记卡`。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-17-50-34.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-17-50-34.png)
 
 添加完成之后，就可以为后续订阅做好准备了。
 
@@ -147,6 +147,6 @@ tags:
 
 比如用 `Opus 4.6` 写代码，不到 `20` 分钟就到5小时 `limit` 了，基本没法高强度使用。当然富哥们预算充足的话，可以考虑 **`200 美元/月`** 的 `Claude Max`。但如果同样都是 **`20 美元/月`**，那 `ChatGPT Plus` 真的可以说是**量大管饱**。像我这种高强度使用 `GPT-5.4 High` 一整天，通常也用不到 `Weekly Limit` 的 `10%`。
 
-![](chatgpt-plus-subscription-via-google-play/2026-03-11-18-03-10.png)
+![](chatgpt-plus-subscription-via-app-sotre-google-play/2026-03-11-18-03-10.png)
 
 不得不说，`ChatGPT Plus` 的性价比确实很高。跑复杂任务时，它并不比 `Claude` 差，甚至有些场景`Opus 4.6`搞不定的，`ChatGPT Plus`还能搞定，所以无脑冲就完事了。
