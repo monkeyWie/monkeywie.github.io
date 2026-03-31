@@ -24,7 +24,7 @@ tags:
 
 可以看到，通过国际版年付 + AFF 购买，Pro 折合 ¥132.3/月，和国内季付的 ¥134.1/月几乎一样，Max 甚至更便宜，而且不用抢，随时能买。
 
-> 各位需要购买的朋友可以直接走我的AFF链接购买，享受10%优惠：https://z.ai/subscribe?ic=3ZLYGYUJUO
+> 各位需要购买的朋友可以走我的AFF链接，享受10%优惠：https://z.ai/subscribe?ic=3ZLYGYUJUO
 
 ## GLM Coding Plan 体验
 
