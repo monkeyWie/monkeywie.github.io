@@ -3,24 +3,28 @@ layout: '~/layouts/MarkdownLayout.astro'
 title: 关于我
 ---
 
-java 是工作，typescript + golang + flutter 是生活，github 斩获 4w+⭐️的开源爱好者，随时可能走上独立开发之路的打工🐂🐎！
+Hi，我是 Levi，名字来自最爱的兵长，刚好和中文名谐音相符，一拍即合。
+
+白天写 Java 养活自己，业余用 TypeScript + Go + Flutter 做自己想做的东西，GitHub 收获 5w+⭐️，热衷开源，随时可能走上独立开发之路的打工🐂🐎！
 
 ## 我的开源项目
 
-- [Gopeed](https://github.com/GopeedLab/gopeed) - 一款使用 Golang + Flutter 开发的全平台下载工具，支持 Windows、Mac、Linux、Android、iOS 等多个平台。
+- [Gopeed](https://github.com/GopeedLab/gopeed) - 一款使用 Golang + Flutter 开发的全平台现代化下载工具，支持 HTTP、BitTorrent、ED2k 协议，并且支持 Windows、Mac、Linux、Android、iOS、Web、Docker 等多个平台。
 - [Typix](https://github.com/monkeyWie/typix) - 一站式AI生图工具，基于 Typescript 全栈开发，支持 Cloudflare Workers 和 Docker 一键部署，集成多种 AI 图像生成模型，并且可以免费使用 Cloudflare AI 的生图模型。
 - [Proxyee](https://github.com/monkeyWie/proxyee) - 基于 Netty 的 Java 代理服务器框架，支持 HTTP 和 HTTPS 的代理和 MITM(中间人攻击)。
 - [Proxyee-Down](https://github.com/proxyee-down-org/proxyee-down) - Gopeed 的前身，一款基于 Java 开发的跨平台下载工具，支持多线程下载和断点续传。
+
+## 微信公众号
+
+<img src="/images/wechat.webp" alt="微信公众号" width="200" />
+
+博客和微信公众号同步更新，如果想第一时间看到更新推送，欢迎关注我的微信公众号。
 
 ## 联系我
 
 - GitHub: [monkeyWie](https://github.com/monkeyWie)
 - 推特: [@Levi2RICH](https://x.com/Levi2RICH)
 - 邮箱: liwei2633@gmail.com
-
-## 微信公众号
-
-<img src="/images/wechat.webp" alt="微信公众号" width="200" />
 
 ## 打赏
 
