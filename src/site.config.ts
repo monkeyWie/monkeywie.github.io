@@ -7,7 +7,7 @@ const config: SiteConfig = {
   title: "Levi's Blog",
   // The description of your site, used for SEO and RSS feed.
   description:
-    'A coder-ready Astro blog theme with 59 of your favorite color schemes to choose from',
+    'Levi的个人技术博客，分享编程、开发工具、DevOps、AI等领域的学习笔记和实践经验。涵盖Java、JavaScript、TypeScript、Golang、Docker、Kubernetes等技术栈。',
   // The author of the site, used in the footer, SEO, and RSS feed.
   author: 'Levi',
   // Keywords for SEO, used in the meta tags.
