@@ -54,7 +54,7 @@ const config: SiteConfig = {
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/monkeyWie/monkeywie.github.io',
+      url: 'https://github.com/monkeyWie',
       external: true,
     },
   ],
@@ -165,7 +165,7 @@ const config: SiteConfig = {
     email: 'liwei2633@gmail.com',
     // linkedin: 'https://github.com/monkeyWie/monkeywie.github.io',
     // bluesky: 'https://github.com/monkeyWie/monkeywie.github.io',
-    twitter: 'https://twitter.com/JayPlayDota',
+    twitter: 'https://twitter.com/Levi2RICH',
     rss: true, // Set to true to include an RSS feed link in the footer
   },
   // Configuration for Giscus comments.
